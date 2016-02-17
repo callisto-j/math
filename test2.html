@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=sjis"/>
+        <title>関数グラフ描画スクリプト・SVGGraph.js</title>
+        <script src="SVGGraph3.js"></script>
+    </head>
+
+    <body>
+        <form class="js-slider-form" onsubmit="return false;">
+         <input type="text" name="slider" id="slider1o" value="0">
+            <div id="slider1" class="js-slider">
+                <div></div>
+        <input type="radio" value="" checked="checked">
+        </div>
+    </form>
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <script src="slider.js"></script>
+    
+    <svg width="200" height="200" type="text"
+    script="setRange(-5,5,-5,5);
+    axis('full',1,1);
+    plot('sin(x)');
+    style.stroke='red';"
+    mode="swp"
+    />
+
+<!-- 
+-->      
+    </body>
+</html>
