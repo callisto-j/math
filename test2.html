@@ -1,47 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-        <title>é–¢æ•°ã‚°ãƒ©ãƒ•æç”»ã‚¹ã‚¯ãƒªãƒ—ãƒˆãƒ»SVGGraph.js</title>
-
-        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=sjis"/>
+        <title>ŠÖ”ƒOƒ‰ƒt•`‰æƒXƒNƒŠƒvƒgESVGGraph.js</title>
         <script src="SVGGraph3.js"></script>
     </head>
 
     <body>
-        <svg width="200" height="200" type="text"
-        script="setRange(-5,5,-5,5);
-        axis('full',1,1);
-        plot('{{0}}sin({{1}}*x)');
-        style.stroke='red';"
-        param0="2" param1="3"
-        mode="swp"
-        />
-        p0: <input type="range" name="range" value="2" class="range0" />
-        p1: <input type="range" name="range" value="3" class="range1"/>
-        <script>
-        $(function(){
-            // åˆæœŸåŒ–
-            $(".range0").val($(".gui").find("span").eq(0).find("input").val());
-            $(".range1").val($(".gui").find("span").eq(1).find("input").val());
+        <form class="js-slider-form" onsubmit="return false;">
+         <input type="text" name="slider" id="slider1o" value="0">
+            <div id="slider1" class="js-slider">
+                <div></div>
+        <input type="radio" value="" checked="checked">
+        </div>
+    </form>
+    <link rel="stylesheet" type="text/css" href="slider.css">
+    <script src="slider.js"></script>
+    
+    <svg width="200" height="200" type="text"
+    script="setRange(-5,5,-5,5);
+    axis('full',1,1);
+    plot('sin(x)');
+    style.stroke='red';"
+    mode="swp"
+    />
 
-            // åŒæœŸå‡¦ç†
-            $(".range0").on('input', function () {
-                $(".gui").find("span").eq(0).find("input").val($(this).val());
-            });
-
-            $(".range1").on('input', function () {
-                $(".gui").find("span").eq(1).find("input").val($(this).val());
-            });
-
-            $(".range0").change( function () {
-                $(".gui").find("span").eq(0).find("input").val($(this).val());
-            });
-
-            $(".range1").change( function () {
-                $(".gui").find("span").eq(1).find("input").val($(this).val());
-            });
-        });
-        </script>
+<!-- 
+-->      
     </body>
 </html>

@@ -1,15 +1,15 @@
 /* SVGGraph.js ver1.24
 ==============
-æœ¬ã‚¹ã‚¯ãƒªãƒ—ãƒˆã¯webãƒ–ãƒ©ã‚¦ã‚¶ä¸Šã§äºŒæ¬¡å…ƒé–¢æ•°ã‚°ãƒ©ãƒ•ã‚’æç”»ã™ã‚‹ãŸã‚ã®ã‚‚ã®ã§ã™ï¼
-å°‘ãªã„è¨˜è¿°ã§é–¢æ•°ã‚°ãƒ©ãƒ•ã‚’è¨˜è¿°ã™ã‚‹ã“ã¨ãŒå‡ºæ¥ã¾ã™ï¼
+–{ƒXƒNƒŠƒvƒg‚Íwebƒuƒ‰ƒEƒUã‚Å“ñŸŒ³ŠÖ”ƒOƒ‰ƒt‚ğ•`‰æ‚·‚é‚½‚ß‚Ì‚à‚Ì‚Å‚·D
+­‚È‚¢‹Lq‚ÅŠÖ”ƒOƒ‰ƒt‚ğ‹Lq‚·‚é‚±‚Æ‚ªo—ˆ‚Ü‚·D
 
-åŸºæœ¬ã¨ãªã‚‹ã‚¢ã‚¤ãƒ‡ã‚£ã‚¢ã¯Peter Jipsenæ°ã®ASCIIsvg.js
+Šî–{‚Æ‚È‚éƒAƒCƒfƒBƒA‚ÍPeter Jipsen‚ÌASCIIsvg.js
 http://www.chapman.edu/~jipsen/svg/ASCIIsvg.js
-ã‹ã‚‰å¾—ã¦ã„ã¾ã™ãŒï¼Œã‚³ãƒ¼ãƒ‰ã¯å…¨ã¦ã‚¹ã‚¯ãƒ©ãƒƒãƒã‹ã‚‰è¨˜è¿°ã—ã¦ã„ã¾ã™ï¼
+‚©‚ç“¾‚Ä‚¢‚Ü‚·‚ªCƒR[ƒh‚Í‘S‚ÄƒXƒNƒ‰ƒbƒ`‚©‚ç‹Lq‚µ‚Ä‚¢‚Ü‚·D
 
-å‹•ä½œç’°å¢ƒ:
-firefox,chrome,opera,ie9+ç­‰(html5ã‚’ã‚µãƒãƒ¼ãƒˆã™ã‚‹ãƒ–ãƒ©ã‚¦ã‚¶)
-â€»ie8ä»¥å‰ã§ã¯å‹•ä½œã—ã¾ã›ã‚“ï¼
+“®ìŠÂ‹«:
+firefox,chrome,opera,ie9+“™(html5‚ğƒTƒ|[ƒg‚·‚éƒuƒ‰ƒEƒU)
+¦ie8ˆÈ‘O‚Å‚Í“®ì‚µ‚Ü‚¹‚ñD
 
 The MIT License (MIT)
 
@@ -33,32 +33,32 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-ä»¥ä¸‹ã«å®šã‚ã‚‹æ¡ä»¶ã«å¾“ã„ã€æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ãŠã‚ˆã³é–¢é€£æ–‡æ›¸ã®ãƒ•ã‚¡ã‚¤ãƒ«ï¼ˆä»¥ä¸‹ã€Œã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã€ï¼‰ã®è¤‡è£½ã‚’å–å¾—ã™ã‚‹ã™ã¹ã¦ã®äººã«å¯¾ã—ã€ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ç„¡åˆ¶é™ã«æ‰±ã†ã“ã¨ã‚’ç„¡å„Ÿã§è¨±å¯ã—ã¾ã™ã€‚ã“ã‚Œã«ã¯ã€ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®è¤‡è£½ã‚’ä½¿ç”¨ã€è¤‡å†™ã€å¤‰æ›´ã€çµåˆã€æ²è¼‰ã€é ’å¸ƒã€ã‚µãƒ–ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ã€ãŠã‚ˆã³/ã¾ãŸã¯è²©å£²ã™ã‚‹æ¨©åˆ©ã€ãŠã‚ˆã³ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’æä¾›ã™ã‚‹ç›¸æ‰‹ã«åŒã˜ã“ã¨ã‚’è¨±å¯ã™ã‚‹æ¨©åˆ©ã‚‚ç„¡åˆ¶é™ã«å«ã¾ã‚Œã¾ã™ã€‚
+ˆÈ‰º‚É’è‚ß‚éğŒ‚É]‚¢A–{ƒ\ƒtƒgƒEƒFƒA‚¨‚æ‚ÑŠÖ˜A•¶‘‚Ìƒtƒ@ƒCƒ‹iˆÈ‰ºuƒ\ƒtƒgƒEƒFƒAvj‚Ì•¡»‚ğæ“¾‚·‚é‚·‚×‚Ä‚Ìl‚É‘Î‚µAƒ\ƒtƒgƒEƒFƒA‚ğ–³§ŒÀ‚Éˆµ‚¤‚±‚Æ‚ğ–³‚Å‹–‰Â‚µ‚Ü‚·B‚±‚ê‚É‚ÍAƒ\ƒtƒgƒEƒFƒA‚Ì•¡»‚ğg—pA•¡ÊA•ÏXAŒ‹‡AŒfÚA”Ğ•zAƒTƒuƒ‰ƒCƒZƒ“ƒXA‚¨‚æ‚Ñ/‚Ü‚½‚Í”Ì”„‚·‚éŒ —˜A‚¨‚æ‚Ñƒ\ƒtƒgƒEƒFƒA‚ğ’ñ‹Ÿ‚·‚é‘Šè‚É“¯‚¶‚±‚Æ‚ğ‹–‰Â‚·‚éŒ —˜‚à–³§ŒÀ‚ÉŠÜ‚Ü‚ê‚Ü‚·B
 
-ä¸Šè¨˜ã®è‘—ä½œæ¨©è¡¨ç¤ºãŠã‚ˆã³æœ¬è¨±è«¾è¡¨ç¤ºã‚’ã€ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®ã™ã¹ã¦ã®è¤‡è£½ã¾ãŸã¯é‡è¦ãªéƒ¨åˆ†ã«è¨˜è¼‰ã™ã‚‹ã‚‚ã®ã¨ã—ã¾ã™ã€‚
+ã‹L‚Ì’˜ìŒ •\¦‚¨‚æ‚Ñ–{‹–‘ø•\¦‚ğAƒ\ƒtƒgƒEƒFƒA‚Ì‚·‚×‚Ä‚Ì•¡»‚Ü‚½‚Íd—v‚È•”•ª‚É‹LÚ‚·‚é‚à‚Ì‚Æ‚µ‚Ü‚·B
 
-ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã¯ã€Œç¾çŠ¶ã®ã¾ã¾ã€ã§ã€æ˜ç¤ºã§ã‚ã‚‹ã‹æš—é»™ã§ã‚ã‚‹ã‹ã‚’å•ã‚ãšã€ä½•ã‚‰ã®ä¿è¨¼ã‚‚ãªãæä¾›ã•ã‚Œã¾ã™ã€‚ã“ã“ã§ã„ã†ä¿è¨¼ã¨ã¯ã€å•†å“æ€§ã€ç‰¹å®šã®ç›®çš„ã¸ã®é©åˆæ€§ã€ãŠã‚ˆã³æ¨©åˆ©éä¾µå®³ã«ã¤ã„ã¦ã®ä¿è¨¼ã‚‚å«ã¿ã¾ã™ãŒã€ãã‚Œã«é™å®šã•ã‚Œã‚‹ã‚‚ã®ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ ä½œè€…ã¾ãŸã¯è‘—ä½œæ¨©è€…ã¯ã€å¥‘ç´„è¡Œç‚ºã€ä¸æ³•è¡Œç‚ºã€ã¾ãŸã¯ãã‚Œä»¥å¤–ã§ã‚ã‚ã†ã¨ã€ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã«èµ·å› ã¾ãŸã¯é–¢é€£ã—ã€ã‚ã‚‹ã„ã¯ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®ä½¿ç”¨ã¾ãŸã¯ãã®ä»–ã®æ‰±ã„ã«ã‚ˆã£ã¦ç”Ÿã˜ã‚‹ä¸€åˆ‡ã®è«‹æ±‚ã€æå®³ã€ãã®ä»–ã®ç¾©å‹™ã«ã¤ã„ã¦ä½•ã‚‰ã®è²¬ä»»ã‚‚è² ã‚ãªã„ã‚‚ã®ã¨ã—ã¾ã™ã€‚
+ƒ\ƒtƒgƒEƒFƒA‚ÍuŒ»ó‚Ì‚Ü‚Üv‚ÅA–¾¦‚Å‚ ‚é‚©ˆÃ–Ù‚Å‚ ‚é‚©‚ğ–â‚í‚¸A‰½‚ç‚Ì•ÛØ‚à‚È‚­’ñ‹Ÿ‚³‚ê‚Ü‚·B‚±‚±‚Å‚¢‚¤•ÛØ‚Æ‚ÍA¤•i«A“Á’è‚Ì–Ú“I‚Ö‚Ì“K‡«A‚¨‚æ‚ÑŒ —˜”ñNŠQ‚É‚Â‚¢‚Ä‚Ì•ÛØ‚àŠÜ‚İ‚Ü‚·‚ªA‚»‚ê‚ÉŒÀ’è‚³‚ê‚é‚à‚Ì‚Å‚Í‚ ‚è‚Ü‚¹‚ñB ìÒ‚Ü‚½‚Í’˜ìŒ Ò‚ÍAŒ_–ñsˆ×A•s–@sˆ×A‚Ü‚½‚Í‚»‚êˆÈŠO‚Å‚ ‚ë‚¤‚ÆAƒ\ƒtƒgƒEƒFƒA‚É‹Nˆö‚Ü‚½‚ÍŠÖ˜A‚µA‚ ‚é‚¢‚Íƒ\ƒtƒgƒEƒFƒA‚Ìg—p‚Ü‚½‚Í‚»‚Ì‘¼‚Ìˆµ‚¢‚É‚æ‚Á‚Ä¶‚¶‚éˆêØ‚Ì¿‹A‘¹ŠQA‚»‚Ì‘¼‚Ì‹`–±‚É‚Â‚¢‚Ä‰½‚ç‚ÌÓ”C‚à•‰‚í‚È‚¢‚à‚Ì‚Æ‚µ‚Ü‚·B
 */
 
-//non stricté–¢æ•°
-//NOTE:use strictã®é–¢æ•°ã¨ã¯æ··åœ¨ã§ããªã„ãŸã‚åˆ†é›¢ã—ã¦ç®¡ç†ã™ã‚‹ï¼
+//non strictŠÖ”
+//NOTE:use strict‚ÌŠÖ”‚Æ‚Í¬İ‚Å‚«‚È‚¢‚½‚ß•ª—£‚µ‚ÄŠÇ—‚·‚éD
 var SVGGraphNonStrict = (function(){
-	//é–¢æ•°æ–‡å­—åˆ—ã‚’functionã¨ã—ã¦å®Ÿè¡Œå¯èƒ½ã¨ã™ã‚‹ï¼
+	//ŠÖ”•¶š—ñ‚ğfunction‚Æ‚µ‚ÄÀs‰Â”\‚Æ‚·‚éD
 	function toFunction(source, paramName, Math, mathjs, svg){
 		var func;
 		var m = Math;
 		with(Math){eval("func = function(" + paramName + "){return " + mathjs(source) + ";};");}
 		return func;
 	}
-	//æ–‡å­—åˆ—ã‚’æ•°å€¤ã«ã—ã¦è¿”ã™ï¼
+	//•¶š—ñ‚ğ”’l‚É‚µ‚Ä•Ô‚·D
 	function toValue(source, Math, mathjs, svg){
 		if(typeof source == "number" || source instanceof Object){return source;}
 		if(source === undefined || source === null || source == ""){return;}
 		var result;
 		var m = Math;
 		with(Math){eval("result = " + mathjs(source) + ";");}
-		//å‹ãƒã‚§ãƒƒã‚¯
-		//NOTE:èª¤ã£ã¦HTMLElementã‚’å‚ç…§ã™ã‚‹ã‚±ãƒ¼ã‚¹ãŒã‚ã‚‹
+		//Œ^ƒ`ƒFƒbƒN
+		//NOTE:Œë‚Á‚ÄHTMLElement‚ğQÆ‚·‚éƒP[ƒX‚ª‚ ‚é
 		switch(typeof result){
 			case "string": case "number": case "boolean":
 				break;
@@ -77,11 +77,11 @@ var SVGGraphNonStrict = (function(){
 })();
 Object.freeze(SVGGraphNonStrict);
 
-//ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«æœ¬ä½“
+//ƒ‚ƒWƒ…[ƒ‹–{‘Ì
 var SVGGraph = (function(){
 	"use strict";
 
-	//svgã®åˆ©ç”¨å¯å¦åˆ¤å®š
+	//svg‚Ì—˜—p‰Â”Û”»’è
 	var isSVGAvailable = !document.createElementNS 
 		? false 
 		: document.createElementNS("http://www.w3.org/2000/svg", "svg").viewBox !== undefined;
@@ -90,17 +90,17 @@ var SVGGraph = (function(){
 	var SVG_NS = "http://www.w3.org/2000/svg";
 	var XHTML_NS = "http://www.w3.org/1999/xhtml";
 	
-	//åˆ©ç”¨ã‚’çµ‚äº†ã—ãŸè¦ç´ ã‚’ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã™ã‚‹
+	//—˜—p‚ğI—¹‚µ‚½—v‘f‚ğƒLƒƒƒbƒVƒ…‚·‚é
 	var elemCache = {};
 	function cacheElem(name, elem){
-		//å±æ€§ã‚’å…¨ã¦å‰Šé™¤
+		//‘®«‚ğ‘S‚Äíœ
 		var attrs = elem.attributes;
 		for(var i = attrs.length-1; i>=0; i--){
 			var attr = attrs[i];
 			if(attr.name == "d"){
-				elem.setAttribute(attr.name, "M0,0");//NOTE:chromeå¯¾ç­–
+				elem.setAttribute(attr.name, "M0,0");//NOTE:chrome‘Îô
 			}else{
-				elem.setAttribute(attr.name, "");//NOTE:ieå¯¾ç­–
+				elem.setAttribute(attr.name, "");//NOTE:ie‘Îô
 				elem.removeAttribute(attr.name);
 			}
 		}
@@ -112,40 +112,40 @@ var SVGGraph = (function(){
 		list.push(elem);
 	}
 
-	//ãƒãƒ¼ãƒ‰ã‚’ç”Ÿæˆã™ã‚‹
+	//ƒm[ƒh‚ğ¶¬‚·‚é
 	var templates = {};
 	function getElem(name, attributes){
 		var result;
-		//ä½¿ç”¨æ¸ˆã¿è¦ç´ ã‚’å†åˆ©ç”¨ã™ã‚‹
+		//g—pÏ‚İ—v‘f‚ğÄ—˜—p‚·‚é
 		var freeList = elemCache[name];
 		if(freeList && freeList.length>0){
 			result = freeList.pop();
 		}
-		//è¦‹ã¤ã‹ã‚‰ãªã‹ã£ãŸå ´åˆ
+		//Œ©‚Â‚©‚ç‚È‚©‚Á‚½ê‡
 		if(!result){
-			//ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã‚’æ¢ã™
+			//ƒeƒ“ƒvƒŒ[ƒg‚ğ’T‚·
 			var template = templates[name];
 			if(!template){
-				//è¦‹ã¤ã‹ã‚‰ãªã‘ã‚Œã°ãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã¨ã—ã¦ç™»éŒ²ã™ã‚‹ï¼
+				//Œ©‚Â‚©‚ç‚È‚¯‚ê‚Îƒeƒ“ƒvƒŒ[ƒg‚Æ‚µ‚Ä“o˜^‚·‚éD
 				template = document.createElementNS(SVG_NS, name);
 				templates[name] = template;
 			}
 			result = template.cloneNode(false);
 		}
-		//è‡ªå‹•ç”Ÿæˆã®è­˜åˆ¥å­ã‚’è¿½åŠ 
+		//©“®¶¬‚Ì¯•Êq‚ğ’Ç‰Á
 		result.setAttribute("auto-created", "true");
-		//åˆæœŸå€¤ã®è¨­å®š
+		//‰Šú’l‚Ìİ’è
 		return insertAttributes(result, attributes);
 	}
 	
-	//HTMLè¦ç´ ã‚’ç”Ÿæˆã™ã‚‹
+	//HTML—v‘f‚ğ¶¬‚·‚é
 	function getXHTMLElem(name, attributes){
 		var elem = document.createElementNS(XHTML_NS, name);
 		elem.setAttribute("auto-created", "true");
 		return insertAttributes(elem, attributes);
 	}
 
-	//å±æ€§å€¤ã‚’æŒ¿å…¥ã™ã‚‹
+	//‘®«’l‚ğ‘}“ü‚·‚é
 	function insertAttributes(elem, attributes){
 		if(attributes){
 			for(var i in attributes){
@@ -155,18 +155,18 @@ var SVGGraph = (function(){
 		return elem;
 	}
 
-	//é–¢æ•°ç¾¤
+	//ŠÖ”ŒQ
 	var Math = (function(){
-		//window.Mathã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®ã‚¯ãƒ­ãƒ¼ãƒ³ã‚’ä½œã‚‹
+		//window.MathƒIƒuƒWƒFƒNƒg‚ÌƒNƒ[ƒ“‚ğì‚é
 		var obj = {};
-		//å®šæ•°
+		//’è”
 		push(["E", "LN2", "LN10", "LOG2E", "LOG10E", "PI", "SQRT1_2", "SQRT2"]);
-		//é–¢æ•°
+		//ŠÖ”
 		push(["abs", "acos", "asin", "atan", "atan2", 
 			"ceil", "cos", "exp", "floor", "imul", 
 			"log", "max", "min", "pow", "random", 
 			"round", "sin", "sqrt", "tan"]);
-		//Mathã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‹ã‚‰é–¢æ•°ã‚’ã‚³ãƒ”ãƒ¼ã™ã‚‹ï¼
+		//MathƒIƒuƒWƒFƒNƒg‚©‚çŠÖ”‚ğƒRƒs[‚·‚éD
 		function push(arr){
 			for(var i = 0, len = arr.length; i<len; i++){
 				obj[arr[i]] = window.Math[arr[i]];
@@ -174,7 +174,7 @@ var SVGGraph = (function(){
 		}
 		return obj;
 	})();
-	//ç‹¬è‡ªé–¢æ•°ãƒ»å®šæ•°ã®è¿½åŠ 
+	//“Æ©ŠÖ”E’è”‚Ì’Ç‰Á
 	function registerMath(name, f){
 		var m = Math;
 		if(typeof f == "function"){
@@ -187,14 +187,14 @@ var SVGGraph = (function(){
 		}
 	}
 
-	//ãƒã‚¯ãƒ­
+	//ƒ}ƒNƒ
 	var _Macro = {};
-	//ãƒã‚¯ãƒ­ã®ç™»éŒ²
+	//ƒ}ƒNƒ‚Ì“o˜^
 	function registerMacro(name, f){
 		_Macro[name] = f;
 	}
 	
-	//åˆæœŸè¨­å®šãƒ»çµ‚äº†è¨­å®š
+	//‰Šúİ’èEI—¹İ’è
 	var _pre = function(){};
 	function registerPresetting(f){
 		_pre = f;
@@ -204,9 +204,9 @@ var SVGGraph = (function(){
 		_post = f;
 	}
 
-	//ãƒãƒ¼ã‚«ãƒ¼
+	//ƒ}[ƒJ[
 	var Marker = {none: getElem("rect")};
-	//ãƒãƒ¼ã‚«ãƒ¼ã‚’ç™»éŒ²ã™ã‚‹
+	//ƒ}[ƒJ[‚ğ“o˜^‚·‚é
 	function registerMarker(source, blackCaseName, whiteCaseName){
 		if(blackCaseName === undefined || whiteCaseName === undefined){return;}
 		var elem;
@@ -220,14 +220,14 @@ var SVGGraph = (function(){
 		elem.isBlackCase = true;
 	}
 
-	//ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ãƒãƒ¼ã‚«ãƒ¼ã‚’ç™»éŒ²ã™ã‚‹
+	//ƒfƒtƒHƒ‹ƒg‚Ìƒ}[ƒJ[‚ğ“o˜^‚·‚é
 	(function(){
 		registerMarker(getElem("polygon", {points: "-5,0 -3,5 -5,10 5,5"}), "arrow", "warrow");
 		registerMarker(getElem("circle", {cx: "5", cy:"5", r: "4"}), "dot", "circle");
 		registerMarker(getElem("polygon", {points: "5,0 10,5 5,10 0,5"}), "dia", "wdia");
 	})();
 
-	//æ–‡å­—åˆ—ä½ç½®ã®æ°´å¹³ä½ç½®ã‚’å–å¾—ã™ã‚‹
+	//•¶š—ñˆÊ’u‚Ì…•½ˆÊ’u‚ğæ“¾‚·‚é
 	function toHPos(pos){
 		switch(pos){
 			case "topLeft":case "left":case "bottomLeft":
@@ -246,7 +246,7 @@ var SVGGraph = (function(){
 		}
 	}
 	
-	//æ–‡å­—åˆ—ä½ç½®ã®å‚ç›´ä½ç½®ã‚’å–å¾—ã™ã‚‹
+	//•¶š—ñˆÊ’u‚Ì‚’¼ˆÊ’u‚ğæ“¾‚·‚é
 	function toVPos(pos){
 		switch(pos){
 			case "topLeft":case "top":case "topRight":
@@ -265,9 +265,9 @@ var SVGGraph = (function(){
 		}
 	}
 
-	//ãƒšãƒ¼ã‚¸ã«å«ã¾ã‚Œã‚‹ã‚°ãƒ©ãƒ•å…¨ä½“ã‚’æç”»ã™ã‚‹
-	//onloadã‚¤ãƒ™ãƒ³ãƒˆã§å®Ÿè¡Œã•ã‚Œã‚‹ãƒ¡ã‚¤ãƒ³å‡¦ç†.
-	//NOTE:å®Ÿè¡Œã™ã‚‹ã®ã¯svgè¦ç´ ã«å¯¾ã—ã¦ä¸€åº¦ã®ã¿
+	//ƒy[ƒW‚ÉŠÜ‚Ü‚ê‚éƒOƒ‰ƒt‘S‘Ì‚ğ•`‰æ‚·‚é
+	//onloadƒCƒxƒ“ƒg‚ÅÀs‚³‚ê‚éƒƒCƒ“ˆ—.
+	//NOTE:Às‚·‚é‚Ì‚Ísvg—v‘f‚É‘Î‚µ‚Äˆê“x‚Ì‚İ
 	function main(){
 		var svgs = document.querySelectorAll("svg[script]:not([graph])");
 		for(var i = 0, len = svgs.length; i<len; i++){
@@ -276,48 +276,48 @@ var SVGGraph = (function(){
 		}
 	}
 	
-	//ã‚°ãƒ©ãƒ•å‡¦ç†ã«é–¢ã‚ã‚‹æ©Ÿèƒ½ã‚’è¿½åŠ ãƒ»å®Ÿè¡Œã™ã‚‹
+	//ƒOƒ‰ƒtˆ—‚ÉŠÖ‚í‚é‹@”\‚ğ’Ç‰ÁEÀs‚·‚é
 	function setup(svg){
-		//äº‹å‰å‡¦ç†
+		//–‘Oˆ—
 		setupStyle(svg);
-		//ã‚³ã‚¢æ©Ÿèƒ½ã®è¨­å®š
+		//ƒRƒA‹@”\‚Ìİ’è
 		extendAPI(svg);
 		drawGraph(svg);
-		//ã‚ªãƒ—ã‚·ãƒ§ãƒ³æ©Ÿèƒ½ã®è¨­å®š
+		//ƒIƒvƒVƒ‡ƒ“‹@”\‚Ìİ’è
 		extendAnimAPI(svg);
 		extendOutputAPI(svg);
-		//GUIæ©Ÿèƒ½ã®è¨­å®š
+		//GUI‹@”\‚Ìİ’è
 		addMouseEvent(svg);
 		addDragEvent(svg);
 		createGUI(svg);
 	}
 
-	//ã‚¹ã‚¿ã‚¤ãƒ«è¨­å®šã‚’è¡Œã†
+	//ƒXƒ^ƒCƒ‹İ’è‚ğs‚¤
 	var rgexCRLF = new RegExp("\r\n|\n", "g");
 	function setupStyle(svg){
 		svg.style.overflow = "hidden";
-		//æ”¹è¡Œã‚³ãƒ¼ãƒ‰ã®èª¿æ•´
+		//‰üsƒR[ƒh‚Ì’²®
 		var script = svg.getAttribute("script");
 		script = script.replace(rgexCRLF, "\r");
 		svg.setAttribute("script", script);
-		//ã‚°ãƒ©ãƒ•æŒ¿å…¥å¯¾è±¡ã®å±æ€§ã‚’è¨­å®š
+		//ƒOƒ‰ƒt‘}“ü‘ÎÛ‚Ì‘®«‚ğİ’è
 		var vp = svg.viewportElement ? svg.viewportElement: svg;
 		vp.setAttribute("graph", "graph");
 	}
 
-	//svgã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®APIã®æ‹¡å¼µã‚’è¡Œã†
+	//svgƒIƒuƒWƒFƒNƒg‚ÌAPI‚ÌŠg’£‚ğs‚¤
 	function extendAPI(svg){
-		//å†…éƒ¨å€¤
+		//“à•”’l
 		var initialParams = [10];
 		var currentParams = [10];
 		var originalParams = [10];
-		//å€¤ã‚’è¨­å®šãƒ»å–å¾—ã™ã‚‹
+		//’l‚ğİ’èEæ“¾‚·‚é
 		svg.param = function(i, value){
 			if(i>=10){return;}
 			if(value === undefined){
 				return currentParams[i];
 			}else{
-				//å¤‰æ›ã—ã¦å†…éƒ¨ã«æ ¼ç´
+				//•ÏŠ·‚µ‚Ä“à•”‚ÉŠi”[
 				if(value instanceof String){
 					value = value !== null ? value.split(";")[0]: null;
 				}
@@ -325,13 +325,13 @@ var SVGGraph = (function(){
 			}
 		};
 		
-		//å€¤ã‚’è¨­å®šãƒ»å–å¾—ã™ã‚‹(sliderã«ã¦)
+		//’l‚ğİ’èEæ“¾‚·‚é(slider‚É‚Ä)
 		svg.slider = function(i, value){
 			if(i>=10){return;}
 			if(value === undefined){
 				return originalParams[i];
 			}else{
-				//å¤‰æ›ã—ã¦å†…éƒ¨ã«æ ¼ç´
+				//•ÏŠ·‚µ‚Ä“à•”‚ÉŠi”[
 				if(value instanceof String){
 					value = value !== null ? value.split(";")[0]: null;
 				}
@@ -342,13 +342,13 @@ var SVGGraph = (function(){
 
 		
 		
-		//åˆæœŸå€¤ã‚’ä¿å­˜
+		//‰Šú’l‚ğ•Û‘¶
 		for(var i = 0; i<10; i++){
 			svg.param(i, svg.getAttribute("param" + i));
 			initialParams[i] = currentParams[i];
 		}
 		
-		//ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã®ä¸€æ‹¬å¤‰æ›é–¢æ•°
+		//ƒpƒ‰ƒ[ƒ^‚ÌˆêŠ‡•ÏŠ·ŠÖ”
 		svg.params = function(){
 			for(var i = 0, len = arguments.length; i<len && i<10 ; i++){
 				svg.param(i, arguments[i]);
@@ -357,7 +357,7 @@ var SVGGraph = (function(){
 		
 		var initialScript = svg.getAttribute("script");
 		var currentScript = initialScript;
-		//ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®è¨­å®šé–¢æ•°
+		//ƒXƒNƒŠƒvƒg‚Ìİ’èŠÖ”
 		svg.script = function(src){
 			if(src === undefined){
 				return currentScript;
@@ -365,7 +365,7 @@ var SVGGraph = (function(){
 			currentScript = src;
 		};
 
-		//å†…å®¹ã‚’ãƒªã‚»ãƒƒãƒˆã™ã‚‹
+		//“à—e‚ğƒŠƒZƒbƒg‚·‚é
 		svg.reset = function(){
 			currentScript = initialScript;
 			for(var i =0; i<10; i++){
@@ -374,9 +374,9 @@ var SVGGraph = (function(){
 			svg.update();
 		};
 	}
-	//å‡ºåŠ›ç”¨APIã‚’æ‹¡å¼µã™ã‚‹
+	//o—Í—pAPI‚ğŠg’£‚·‚é
 	function extendOutputAPI(svg){
-		//å±æ€§å€¤ã‚’å‰Šé™¤ã™ã‚‹
+		//‘®«’l‚ğíœ‚·‚é
 		function removeAttributes(elem){
 			removeAttribute(elem, "script");
 			removeAttribute(elem, "mode");
@@ -413,7 +413,7 @@ var SVGGraph = (function(){
 			}
 			return df;
 		}
-		//ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®å–å¾—é–¢æ•°
+		//ƒ\[ƒXƒR[ƒh‚Ìæ“¾ŠÖ”
 		svg.getSource = function(type, needScript){
 			var vp = svg.viewportElement ? svg.viewportElement: svg;
 			var cloned = vp.cloneNode(true);
@@ -425,11 +425,11 @@ var SVGGraph = (function(){
 					removeAttributes(elem);
 				}
 			}
-			//ã‚¹ã‚¿ã‚¤ãƒ«ã®æŒ¿å…¥
+			//ƒXƒ^ƒCƒ‹‚Ì‘}“ü
 			cloned.insertBefore(getStyleElem(), cloned.firstChild);
-			//å®šç¾©svgè¦ç´ ã®æŒ¿å…¥
+			//’è‹`svg—v‘f‚Ì‘}“ü
 			cloned.insertBefore(getDefinitionElem(), cloned.firstChild);
-			//ã‚µã‚¤ã‚ºæœªè¨­å®šã®æ™‚ã¯ç¾åœ¨ã®ã‚µã‚¤ã‚ºã‚’ä½¿ã£ã¦è¨­å®šã™ã‚‹ï¼
+			//ƒTƒCƒY–¢İ’è‚Ì‚ÍŒ»İ‚ÌƒTƒCƒY‚ğg‚Á‚Äİ’è‚·‚éD
 			var style = window.getComputedStyle(vp);
 			if(vp.getAttribute("width")===null){
 				cloned.setAttribute("width", style.width);
@@ -437,12 +437,12 @@ var SVGGraph = (function(){
 			if(vp.getAttribute("height")===null){
 				cloned.setAttribute("height", style.height);
 			}
-			//ã‚·ãƒªã‚¢ãƒ©ã‚¤ã‚ºã™ã‚‹
+			//ƒVƒŠƒAƒ‰ƒCƒY‚·‚é
 			var serializer = new XMLSerializer();
 			var source = serializer.serializeToString(cloned);
-			//åå‰ç©ºé–“ã®è¿½åŠ (å­˜åœ¨ã—ã¦ã„ãŸã‚‰ç„¡è¦–)
+			//–¼‘O‹óŠÔ‚Ì’Ç‰Á(‘¶İ‚µ‚Ä‚¢‚½‚ç–³‹)
 			source = source.replace(/^<svg(?!.+xmlns.+>)/, '<svg xmlns="http://www.w3.org/2000/svg"');
-			//xmlå®£è¨€ã‚’è¿½åŠ 
+			//xmléŒ¾‚ğ’Ç‰Á
 			source = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n' + source;
 			
 			switch(type){
@@ -456,7 +456,7 @@ var SVGGraph = (function(){
 					return new Blob([source], {type: "image/svg+xml"});
 				case "url":
 				default:
-					//NOTE:è¦ã‚‰ãªããªã£ãŸã‚‰URL.revokeObjectURLã‚’ä½¿ã£ã¦å‰Šé™¤ã—ã¾ã—ã‚‡ã†
+					//NOTE:—v‚ç‚È‚­‚È‚Á‚½‚çURL.revokeObjectURL‚ğg‚Á‚Äíœ‚µ‚Ü‚µ‚å‚¤
 					try{
 						var blob = new Blob([source], {type: "image/svg+xml"});
 						return URL.createObjectURL(blob);
@@ -466,22 +466,22 @@ var SVGGraph = (function(){
 			}
 		};
 	}
-	//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ç”¨APIã‚’æ‹¡å¼µã™ã‚‹
+	//ƒAƒjƒ[ƒVƒ‡ƒ“—pAPI‚ğŠg’£‚·‚é
 	function extendAnimAPI(svg){
 		var requestAnimationFrame
 			= window.requestAnimationFrame 
 			|| window.mozRequestAnimationFrame
 			|| window.webkitRequestAnimationFrame
 			|| window.msRequestAnimationFrame
-			|| function(func){setTimeout(func,100);};//ä»£æ›¿é–¢æ•°
-		//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚’å®Ÿè¡Œã™ã‚‹
+			|| function(func){setTimeout(func,100);};//‘ã‘ÖŠÖ”
+		//ƒAƒjƒ[ƒVƒ‡ƒ“‚ğÀs‚·‚é
 		svg.anim = function(params, dur, freeze){
 			if(dur === undefined || dur<=0){dur=5;}
-			//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ä¸­
+			//ƒAƒjƒ[ƒVƒ‡ƒ“’†
 			if(svg.animating){return;}
-			//ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’å¤‰æ›
+			//ƒpƒ‰ƒ[ƒ^‚ğ•ÏŠ·
 			translate(params);
-			//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³é–‹å§‹æ™‚åˆ»
+			//ƒAƒjƒ[ƒVƒ‡ƒ“ŠJn
 			var start = (new Date()).getTime();
 			svg.animating = true;
 			frame();
@@ -491,12 +491,12 @@ var SVGGraph = (function(){
 					var msec = current - start;
 					var rate = msec/(1000*dur);
 					if(rate<1){
-						rate = window.Math.min(rate, 1);//å‹•ä½œã‚¿ã‚¤ãƒŸãƒ³ã‚°ã«ã‚ˆã£ã¦ã¯è¶…ãˆã¦ã—ã¾ã†ï¼
+						rate = window.Math.min(rate, 1);//“®ìƒ^ƒCƒ~ƒ“ƒO‚É‚æ‚Á‚Ä‚Í’´‚¦‚Ä‚µ‚Ü‚¤D
 						rate = window.Math.max(rate, 0);
 						set(rate);
 						requestAnimationFrame(frame);
 					}else{
-						//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³çµ‚äº†
+						//ƒAƒjƒ[ƒVƒ‡ƒ“I—¹
 						svg.animating = undefined;
 						if(freeze){set(1);}else{set(0);}
 					}
@@ -505,7 +505,7 @@ var SVGGraph = (function(){
 					throw e;
 				}
 			}
-			//é€²è¡ŒçŠ¶æ³ã«å¿œã˜ãŸæç”»ã‚’è¡Œã†
+			//isó‹µ‚É‰‚¶‚½•`‰æ‚ğs‚¤
 			function set(rate){
 				for(var i = 0, len=params.length; i<len; i++){
 					var param = params[i];
@@ -514,11 +514,11 @@ var SVGGraph = (function(){
 						var e = param[1];
 						svg.param(i, s + (e - s) * rate);
 					}else{
-						//å˜ä¸€å€¤ã®ã‚±ãƒ¼ã‚¹ã¯ãã®ã¾ã¾
+						//’Pˆê’l‚ÌƒP[ƒX‚Í‚»‚Ì‚Ü‚Ü
 						svg.param(i, param);
 					}
 				}
-				//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³æ™‚ã¯ã‚½ãƒ¼ã‚¹ã®å†è©•ä¾¡ã®å¿…è¦ãªã—
+				//ƒAƒjƒ[ƒVƒ‡ƒ“‚Íƒ\[ƒX‚ÌÄ•]‰¿‚Ì•K—v‚È‚µ
 				svg.update(true);
 			}
 		};
@@ -527,7 +527,7 @@ var SVGGraph = (function(){
 				var param = params[i];
 				if(!(param instanceof Array)){
 					;
-					//ãã®ã¾ã¾
+					//‚»‚Ì‚Ü‚Ü
 				}else if(param.length == 1){
 					params[i] = param[0];
 				}else{
@@ -537,27 +537,27 @@ var SVGGraph = (function(){
 			}
 		}
 	}
-	//ã‚°ãƒ©ãƒ•æ“ä½œGUIã‚’æ§‹ç¯‰ã™ã‚‹
+	//ƒOƒ‰ƒt‘€ìGUI‚ğ\’z‚·‚é
 	function createGUI(svg){
 		placeGUI(svg);
 		setVisibility(svg);
 		registerBtnEvents(svg);
 	}
 
-	//GUIéƒ¨å“ã‚’é…ç½®ã™ã‚‹
+	//GUI•”•i‚ğ”z’u‚·‚é
 	function placeGUI(svg){
 		var elems = {};
 		elems.inputs = [];
 		elems.spans = [];
-		//UIéƒ¨å“ã®ã‚³ãƒ³ãƒ†ãƒŠ
+		//UI•”•i‚ÌƒRƒ“ƒeƒi
 		var div = getXHTMLElem("div", {"class": "gui"});
 		elems.div = div;
-		//ãƒ†ã‚­ã‚¹ãƒˆã‚¨ãƒªã‚¢ã‚’ç”Ÿæˆ
+		//ƒeƒLƒXƒgƒGƒŠƒA‚ğ¶¬
 		var ta = getXHTMLElem("textarea", {wrap: "off"});
 		elems.textarea = ta;
 		ta.textContent = svg.script();
 		div.appendChild(ta);
-		//å…¥åŠ›ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ã‚’ç”Ÿæˆ
+		//“ü—ÍƒtƒB[ƒ‹ƒh‚ğ¶¬
 		for(var i=0; i<10; i++){
 			var span = getXHTMLElem("span");
 			var labelText = svg.getAttribute("label" + i);
@@ -577,18 +577,18 @@ var SVGGraph = (function(){
 			elems.spans[i] = span;
 			div.appendChild(span);
 		}
-		//ãƒœã‚¿ãƒ³ã‚’ç”Ÿæˆ
+		//ƒ{ƒ^ƒ“‚ğ¶¬
 		var bf = getXHTMLElem("span", {"class": "buttons"});
-		elems.btnUpdate = getButton("æ›´æ–°");
-		elems.btnReset = getButton("å¾©å…ƒ");
-		elems.btnStart = getButton("é–‹å§‹");
-		elems.lnkSave = getLink("ä¿å­˜");
-		elems.btnPng = getButton("ç”»åƒ");
+		elems.btnUpdate = getButton("XV");
+		elems.btnReset = getButton("•œŒ³");
+		elems.btnStart = getButton("ŠJn");
+		elems.lnkSave = getLink("•Û‘¶");
+		elems.btnPng = getButton("‰æ‘œ");
 		div.appendChild(bf);
-		//svgè¦ç´ ã®èƒŒå¾Œã«é…ç½®
+		//svg—v‘f‚Ì”wŒã‚É”z’u
 		var vp = svg.viewportElement ? svg.viewportElement : svg;
 		vp.parentNode.insertBefore(div, vp.nextSibling);
-		//å¤‰æ•°ã«æ ¼ç´
+		//•Ï”‚ÉŠi”[
 		svg.elems = elems;
 
 		function getButton(value){
@@ -604,7 +604,7 @@ var SVGGraph = (function(){
 		}
 	}
 	
-	//GUIã®è¡¨ç¤ºéè¡¨ç¤ºã‚’åˆ¶å¾¡ã™ã‚‹
+	//GUI‚Ì•\¦”ñ•\¦‚ğ§Œä‚·‚é
 	function eachAction(f){
 		var g = function(elem){
 			if(elem instanceof Array){
@@ -619,7 +619,7 @@ var SVGGraph = (function(){
 	var hide = eachAction(function(elem){elem.style.display="none";});
 	var readOnly = eachAction(function(elem){elem.readOnly = true;});
 	var editable = eachAction(function(elem){elem.readOnly = false;});
-	//w:æ›¸ãè¾¼ã¿ã‚ã‚Š,s:ã‚¹ã‚¯ãƒªãƒ—ãƒˆè¡¨ç¤º,p:ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿è¡¨ç¤º,l:ãƒªãƒ³ã‚¯ã‚’è¡¨ç¤º,a:ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³å¯èƒ½,i:pngå‡ºåŠ›(éæ¨å¥¨)
+	//w:‘‚«‚İ‚ ‚è,s:ƒXƒNƒŠƒvƒg•\¦,p:ƒpƒ‰ƒ[ƒ^•\¦,l:ƒŠƒ“ƒN‚ğ•\¦,a:ƒAƒjƒ[ƒVƒ‡ƒ“‰Â”\,i:pngo—Í(”ñ„§)
 	function setVisibility(svg){
 		var flags = svg.getAttribute("mode");
 		var elems = svg.elems;
@@ -645,13 +645,13 @@ var SVGGraph = (function(){
 		(flags.match(/p/)? show: hide)(elems.spans);
 		(flags.match(/l/)? show: hide)(elems.lnkSave);
 		(flags.match(/a/)? show: hide)(elems.btnStart);
-		//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã®å¾©å¸°ãƒœã‚¿ãƒ³
+		//ƒAƒjƒ[ƒVƒ‡ƒ“‚Ì•œ‹Aƒ{ƒ^ƒ“
 		if(flags.match(/a/) && svg.getAttribute("freeze") == "true"){
 			show(elems.btnReset);
 		}
 		(flags.match(/i/)? show: hide)(elems.btnPng);
 
-		//å­˜åœ¨ã—ãªã„ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¯éš ã™
+		//‘¶İ‚µ‚È‚¢ƒpƒ‰ƒ[ƒ^‚Í‰B‚·
 		for(var i=0; i<10; i++){
 			if(!svg.getAttribute("param"+i)){
 				hide(elems.spans[i]);
@@ -659,12 +659,12 @@ var SVGGraph = (function(){
 		}
 	}
 	
-	//ã‚¤ãƒ™ãƒ³ãƒˆå‡¦ç†ã‚’è¿½åŠ ã™ã‚‹ï¼
+	//ƒCƒxƒ“ƒgˆ—‚ğ’Ç‰Á‚·‚éD
 	function registerBtnEvents(svg){
 		var elems = svg.elems;
-		//æ›´æ–°ãƒœã‚¿ãƒ³
+		//XVƒ{ƒ^ƒ“
 		elems.btnUpdate.addEventListener("click", function(){
-			//textareaã¨inputè¦ç´ ã®å†…å®¹ã‚’æ›¸ãæˆ»ã™
+			//textarea‚Æinput—v‘f‚Ì“à—e‚ğ‘‚«–ß‚·
 			svg.script(elems.textarea.value);
 			var errored = false;
 			for(var i=0; i<10; i++){
@@ -678,14 +678,14 @@ var SVGGraph = (function(){
 					errored = true;
 				}
 			}
-			//ã‚¨ãƒ©ãƒ¼æ™‚ã¯ä½•ã‚‚ã—ãªã„
+			//ƒGƒ‰[‚Í‰½‚à‚µ‚È‚¢
 			if(errored){return;}
 			svg.update();
 			
 		}, false);
-		//ãƒªã‚»ãƒƒãƒˆãƒœã‚¿ãƒ³
+		//ƒŠƒZƒbƒgƒ{ƒ^ƒ“
 		elems.btnReset.addEventListener("click", function(){
-			//textareaã¨inputè¦ç´ ã®å†…å®¹ã‚’å¾©å…ƒã™ã‚‹
+			//textarea‚Æinput—v‘f‚Ì“à—e‚ğ•œŒ³‚·‚é
 			elems.textarea.value = elems.textarea.textContent;
 			for(var i=0; i<10; i++){
 				var input = elems.inputs[i];
@@ -694,19 +694,19 @@ var SVGGraph = (function(){
 			}
 			svg.reset();
 		}, false);
-		//ä¿å­˜ãƒªãƒ³ã‚¯
+		//•Û‘¶ƒŠƒ“ƒN
 		(function(){
 			var prevSource;
 			elems.lnkSave.addEventListener("mousedown", function(e){
 				try{
-					//å‰å›ã®å†…å®¹ã‚’ç ´æ£„ã™ã‚‹
+					//‘O‰ñ‚Ì“à—e‚ğ”jŠü‚·‚é
 					URL.revokeObjectURL(prevSource);
 				}catch(e){}
 				var source = svg.getSource("url");
 				prevSource = source;
 				elems.lnkSave.href = source;
 			}, false);
-			//ieå¯¾ç­–
+			//ie‘Îô
 			//see http://hebikuzure.wordpress.com/2012/12/16/file-api-%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9F-blob-%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B/
 			if(window.navigator.msSaveBlob){
 				elems.lnkSave.addEventListener("mousedown", function(e){
@@ -715,7 +715,7 @@ var SVGGraph = (function(){
 				}, false);
 			}
 		})();
-		//é–‹å§‹ãƒœã‚¿ãƒ³
+		//ŠJnƒ{ƒ^ƒ“
 		(function(){
 			elems.btnStart.addEventListener("click", function(){
 				var params = [];
@@ -733,8 +733,8 @@ var SVGGraph = (function(){
 				}catch(e){alert(e);}
 			}, false);
 		})();
-		//ç”»åƒãƒªãƒ³ã‚¯
-		//NOTE:å¤ã„chromeã§ã¯ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿ
+		//‰æ‘œƒŠƒ“ƒN
+		//NOTE:ŒÃ‚¢chrome‚Å‚ÍƒGƒ‰[‚ª”­¶
 		(function(){
 			elems.btnPng.addEventListener("click", function(){
 				var svgsource = svg.getSource("dataScheme");
@@ -748,7 +748,7 @@ var SVGGraph = (function(){
 						ctx.drawImage(img, 0, 0);
 						var png = canvas.toDataURL();
 					}catch(e){
-						alert("pngå½¢å¼ã¸ã®å¤‰æ›ã«å¤±æ•—ã—ã¾ã—ãŸï¼");
+						alert("pngŒ`®‚Ö‚Ì•ÏŠ·‚É¸”s‚µ‚Ü‚µ‚½D");
 						return;
 					}
 					window.open(png, "_blank");
@@ -762,7 +762,7 @@ var SVGGraph = (function(){
 		}
 	}
 
-	//ãƒã‚¦ã‚¹ãƒ›ãƒãƒ¼ã‚¤ãƒ™ãƒ³ãƒˆã‚’æŒ¿å…¥ã™ã‚‹
+	//ƒ}ƒEƒXƒzƒo[ƒCƒxƒ“ƒg‚ğ‘}“ü‚·‚é
 	function addMouseEvent(svg){
 		setPosition(0, 0);
 		var point = svg.createSVGPoint();
@@ -780,7 +780,7 @@ var SVGGraph = (function(){
 		var display = document.querySelector(selector);
 		svg.addEventListener("mousemove", f, false);
 
-		//åº§æ¨™ã‚’è¨­å®šã™ã‚‹
+		//À•W‚ğİ’è‚·‚é
 		function setPosition(x, y){
 			var gX = svg.graphX(x);
 			var gY = svg.graphY(y);
@@ -790,14 +790,14 @@ var SVGGraph = (function(){
 				display.textContent = "(" + gX + "," + gY + ")";
 			}
 		}
-		//ã‚°ãƒ©ãƒ•ã§ã®åº§æ¨™ã‚’å–å¾—ã™ã‚‹
+		//ƒOƒ‰ƒt‚Å‚ÌÀ•W‚ğæ“¾‚·‚é
 		svg.getGraphX = function(){return svg.getAttribute("graphX");};
 		svg.getGraphY = function(){return svg.getAttribute("graphY");};
 	}
 	
-	//ãƒã‚¦ã‚¹ãƒ‰ãƒ©ãƒƒã‚°ã‚¤ãƒ™ãƒ³ãƒˆã‚’æŒ¿å…¥ã™ã‚‹
+	//ƒ}ƒEƒXƒhƒ‰ƒbƒOƒCƒxƒ“ƒg‚ğ‘}“ü‚·‚é
 	function addDragEvent(svg){
-		//ãƒ¢ãƒ¼ãƒ‰åˆ¤å®š
+		//ƒ‚[ƒh”»’è
 		var mode = svg.getAttribute("mode");
 		if(!mode || !mode.match(/m/)){return;}
 
@@ -826,7 +826,7 @@ var SVGGraph = (function(){
 		}
 		
 		svg.addEventListener("dblclick", function(e){
-			if(!confirm("å…ƒã«æˆ»ã—ã¾ã™ï¼ã‚ˆã‚ã—ã„ã§ã™ã‹?")){return;}
+			if(!confirm("Œ³‚É–ß‚µ‚Ü‚·D‚æ‚ë‚µ‚¢‚Å‚·‚©?")){return;}
 			svg.slide(0, 0);
 			x = 0; y = 0;
 			svg.update();
@@ -838,30 +838,30 @@ var SVGGraph = (function(){
 		}
 	}
 
-	//ãƒãƒ¼ã‚«ãƒ¼idã®ã‚°ãƒ­ãƒ¼ãƒãƒ«ã‚«ã‚¦ãƒ³ã‚¿
+	//ƒ}[ƒJ[id‚ÌƒOƒ[ƒoƒ‹ƒJƒEƒ“ƒ^
 	var markerCount = 0;
-	//å˜ä¸€ã®ã‚°ãƒ©ãƒ•ã‚’æç”»ã™ã‚‹ãŸã‚ã®APIã‚’å®šç¾©ã™ã‚‹
+	//’Pˆê‚ÌƒOƒ‰ƒt‚ğ•`‰æ‚·‚é‚½‚ß‚ÌAPI‚ğ’è‹`‚·‚é
 	function drawGraph(svg){
 				
-		//ã‚¹ã‚¿ã‚¤ãƒ«
+		//ƒXƒ^ƒCƒ‹
 		var style, mStyle, tStyle, aStyle;
-		//ã‚°ãƒ©ãƒ•é ˜åŸŸè¨­å®š
+		//ƒOƒ‰ƒt—Ìˆæİ’è
 		var setting = new graphSetting();
-		//ãƒã‚¯ãƒ­ã‚’ã“ã®ã‚¹ã‚³ãƒ¼ãƒ—ã«å±•é–‹ã™ã‚‹
+		//ƒ}ƒNƒ‚ğ‚±‚ÌƒXƒR[ƒv‚É“WŠJ‚·‚é
 		var Macro = translateMacro();
-		//mainå†…éƒ¨ã§å‘¼ã³å‡ºã™ãƒ•ã‚¡ãƒ³ã‚¯ã‚·ãƒ§ãƒ³ã®ã‚­ãƒ£ãƒƒã‚·ãƒ¥
+		//main“à•”‚ÅŒÄ‚Ño‚·ƒtƒ@ƒ“ƒNƒVƒ‡ƒ“‚ÌƒLƒƒƒbƒVƒ…
 		var f,pre,post;
-		//evalã§ç”Ÿæˆã—ãŸãƒ•ã‚¡ãƒ³ã‚¯ã‚·ãƒ§ãƒ³ã®ã‚­ãƒ£ãƒƒã‚·ãƒ¥
+		//eval‚Å¶¬‚µ‚½ƒtƒ@ƒ“ƒNƒVƒ‡ƒ“‚ÌƒLƒƒƒbƒVƒ…
 		var funcCache = {};
-		//ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯é–¢æ•°
+		//ƒR[ƒ‹ƒoƒbƒNŠÖ”
 		var callback = function(){};
 		var cp = {};
 		
-		//apiã‚’æ‹¡å¼µã™ã‚‹
+		//api‚ğŠg’£‚·‚é
 		function extendAPI(){
-			//ãƒ¡ã‚¤ãƒ³å‡¦ç†ã‚’å¤–éƒ¨ã«å…¬é–‹
+			//ƒƒCƒ“ˆ—‚ğŠO•”‚ÉŒöŠJ
 			svg.update = main;
-			//åº§æ¨™å¤‰æ›ãƒ»ã‚¹ã‚±ãƒ¼ãƒ«å¤‰æ›é–¢æ•°ã‚’å…¬é–‹
+			//À•W•ÏŠ·EƒXƒP[ƒ‹•ÏŠ·ŠÖ”‚ğŒöŠJ
 			svg.graphX = function(svgX){return setting.graphX(svgX);}
 			svg.graphY = function(svgY){return setting.graphY(svgY);}
 			svg.posX = function(x){return setting.posX(x);}
@@ -871,24 +871,24 @@ var SVGGraph = (function(){
 			svg.setCallback = function(f){callback = f;}
 			svg.slide = function(x, y){setting.slideX = x;setting.slideY = y;}
 			svg.clear = clear;
-			//å¤–éƒ¨ã‹ã‚‰ã‚³ãƒãƒ³ãƒ‰ã‚’å®Ÿè¡Œã™ã‚‹å ´åˆ
+			//ŠO•”‚©‚çƒRƒ}ƒ“ƒh‚ğÀs‚·‚éê‡
 			svg.commands = function(commandName){
 				var func = eval(commandName);
 				return func;
 			}
-			//å¤–éƒ¨ã‹ã‚‰ãƒã‚¯ãƒ­ã‚’å®Ÿè¡Œã™ã‚‹å ´åˆ
+			//ŠO•”‚©‚çƒ}ƒNƒ‚ğÀs‚·‚éê‡
 			svg.macros = function(macroName){
 				return Macro[macroName];
 			}
 		}
 
-		//ãƒ¡ã‚¤ãƒ³å‡¦ç†
-		//repeatingâ€¦è§£æä¸è¦ã®å ´åˆã«trueã‚’æ¸¡ã™
+		//ƒƒCƒ“ˆ—
+		//repeatingc‰ğÍ•s—v‚Ìê‡‚Étrue‚ğ“n‚·
 		function main(repeating){
 			initStyle();
-			//ã‚°ãƒ©ãƒ•ã®å†…å®¹ã‚’åˆæœŸåŒ–ã™ã‚‹
+			//ƒOƒ‰ƒt‚Ì“à—e‚ğ‰Šú‰»‚·‚é
 			clear();
-			//ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’å®Ÿè¡Œã™ã‚‹
+			//ƒXƒNƒŠƒvƒg‚ğÀs‚·‚é
 			var h;
 			for(var i in cp){
 				delete cp[i];
@@ -898,9 +898,9 @@ var SVGGraph = (function(){
 				var m = Math;
 				if(!repeating){
 					setting.init(svg);	
-					//é–¢æ•°ã®ã‚­ãƒ£ãƒƒã‚·ãƒ¥ã‚’ã‚¯ãƒªã‚¢
+					//ŠÖ”‚ÌƒLƒƒƒbƒVƒ…‚ğƒNƒŠƒA
 					funcCache = {};
-					//ã‚½ãƒ¼ã‚¹ã‚’ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«
+					//ƒ\[ƒX‚ğƒRƒ“ƒpƒCƒ‹
 					eval("pre = " + _pre.toString());
 					eval("f = function(){" + setting.script + "\n\r};");
 					eval("post = " + _post.toString());
@@ -916,31 +916,31 @@ var SVGGraph = (function(){
 			}finally{
 				svg.unsuspendRedraw(h);
 			}
-			//ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯é–¢æ•°ã‚’å®Ÿè¡Œ
+			//ƒR[ƒ‹ƒoƒbƒNŠÖ”‚ğÀs
 			callback(svg, cp);
 		}
 		
-		//ã‚¹ã‚¿ã‚¤ãƒ«è¨­å®šã‚’åˆæœŸåŒ–ã™ã‚‹
+		//ƒXƒ^ƒCƒ‹İ’è‚ğ‰Šú‰»‚·‚é
 		function initStyle(){
 			
-			//å›³å½¢ã‚’æç”»ã™ã‚‹éš›ã«ã“ã®ã‚¹ã‚¿ã‚¤ãƒ«ã‚’å‚ç…§ã™ã‚‹(æ›¸ãæ›ãˆ/è¿½åŠ å¯èƒ½)
+			//}Œ`‚ğ•`‰æ‚·‚éÛ‚É‚±‚ÌƒXƒ^ƒCƒ‹‚ğQÆ‚·‚é(‘‚«Š·‚¦/’Ç‰Á‰Â”\)
 			style = {
 				fill: "none",
 				stroke: "black",
 				strokeWidth: 1
 			};
-			//ãƒãƒ¼ã‚«ãƒ¼ã‚¹ã‚¿ã‚¤ãƒ«
+			//ƒ}[ƒJ[ƒXƒ^ƒCƒ‹
 			mStyle = {
 				size: 10,
 				color: "inherit",
 				fill: "white"
 			};
-			//æ–‡å­—åˆ—ã‚’æç”»ã™ã‚‹éš›ã«ã“ã®ã‚¹ã‚¿ã‚¤ãƒ«ã‚’å‚ç…§ã™ã‚‹(æ›¸ãæ›ãˆ/è¿½åŠ å¯èƒ½)
+			//•¶š—ñ‚ğ•`‰æ‚·‚éÛ‚É‚±‚ÌƒXƒ^ƒCƒ‹‚ğQÆ‚·‚é(‘‚«Š·‚¦/’Ç‰Á‰Â”\)
 			tStyle = {
 				fontStyle: "normal",
 				fontSize: 13
 			};
-			//åº§æ¨™è»¸ã‚¹ã‚¿ã‚¤ãƒ«
+			//À•W²ƒXƒ^ƒCƒ‹
 			aStyle = {
 				axisStroke: "black",
 				axisWidth: 2,
@@ -950,8 +950,8 @@ var SVGGraph = (function(){
 			};
 		}
 
-		//ãƒã‚¯ãƒ­ã‚’ã“ã®ã‚¹ã‚³ãƒ¼ãƒ—ã§å®Ÿè¡Œå¯èƒ½ã¨ã™ã‚‹ï¼
-		//NOTE:functionã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ä¸€æ—¦sourceåŒ–ã—ã¦ã‹ã‚‰evalã™ã‚‹
+		//ƒ}ƒNƒ‚ğ‚±‚ÌƒXƒR[ƒv‚ÅÀs‰Â”\‚Æ‚·‚éD
+		//NOTE:functionƒIƒuƒWƒFƒNƒg‚ğˆê’Usource‰»‚µ‚Ä‚©‚çeval‚·‚é
 		function translateMacro(){
 			var _macro = {};
 			var m = Math;
@@ -965,17 +965,17 @@ var SVGGraph = (function(){
 			}
 			return _macro;
 		}
-		//ã‚°ãƒ©ãƒ•ç¯„å›²ã‚’è¨­å®šã™ã‚‹
+		//ƒOƒ‰ƒt”ÍˆÍ‚ğİ’è‚·‚é
 		function setRange(xMin, xMax, yMin, yMax){
 			xMin = fix(xMin);
 			xMax = fix(xMax);
 			yMin = fix(yMin);
 			yMax = fix(yMax);
 			setting.setRange(xMin, xMax, yMin, yMax);
-			//æ—¢å­˜ã®å†…å®¹ã‚’å»ƒæ£„ã™ã‚‹
+			//Šù‘¶‚Ì“à—e‚ğ”pŠü‚·‚é
 			clear()
 		}
-		//ã‚°ãƒ©ãƒ•ç¯„å›²ã‚’çŸ©å½¢ç¯„å›²ã§è¨­å®šã™ã‚‹
+		//ƒOƒ‰ƒt”ÍˆÍ‚ğ‹éŒ`”ÍˆÍ‚Åİ’è‚·‚é
 		function setRangeAsRect(x, y, width, height){
 			x = fix(x);
 			y = fix(y);
@@ -984,18 +984,18 @@ var SVGGraph = (function(){
 			setRange(x, x+width, y, y+height);
 		}
 
-		//å†…éƒ¨ã§åˆ©ç”¨å¯èƒ½ãªé–¢æ•°ç¾¤
-		//é–¢æ•°ã«ã‚ˆã‚‹ã‚°ãƒ©ãƒ•ã‚’æç”»ã™ã‚‹
-		//ç¬¬ä¸€å¼•æ•°ã«é–¢æ•°ã‚’æ¸¡ã™
-		//(1)Functionã‚’æ¸¡ã™
-		//(2)å¤‰æ•°è¡¨è¨˜(å¤‰æ•°ã¯xå›ºå®š)ã®æ–‡å­—åˆ—
-		//(3)åª’ä»‹å¤‰æ•°è¡¨è¨˜(å¤‰æ•°ã¯tå›ºå®š)ã®æ–‡å­—åˆ—
+		//“à•”‚Å—˜—p‰Â”\‚ÈŠÖ”ŒQ
+		//ŠÖ”‚É‚æ‚éƒOƒ‰ƒt‚ğ•`‰æ‚·‚é
+		//‘æˆêˆø”‚ÉŠÖ”‚ğ“n‚·
+		//(1)Function‚ğ“n‚·
+		//(2)•Ï”•\‹L(•Ï”‚ÍxŒÅ’è)‚Ì•¶š—ñ
+		//(3)”}‰î•Ï”•\‹L(•Ï”‚ÍtŒÅ’è)‚Ì•¶š—ñ
 		function plot(func, from, to, pCount, markerStart, markerEnd){
 			var result = functionToPoints(func, from, to, pCount);
 			return path(result, false, markerStart, markerEnd);
 		}
 		
-		//ã‚°ãƒ©ãƒ•ã¨xè»¸ã¨ã®é–“ã®é ˜åŸŸã‚’ç”Ÿæˆã—ã¾ã™ï¼
+		//ƒOƒ‰ƒt‚Æx²‚Æ‚ÌŠÔ‚Ì—Ìˆæ‚ğ¶¬‚µ‚Ü‚·D
 		function area(func, from, to, pCount){
 			var result = functionToPoints(func, from, to, pCount);
 			result.unshift([result[0][0], 0]);
@@ -1006,8 +1006,8 @@ var SVGGraph = (function(){
 			return p;
 		}
 
-		//evalã§ç”Ÿæˆã—ãŸfunctionã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’ãƒ¡ãƒ¢ãƒªã«ä¿å­˜ã™ã‚‹ï¼
-		//NOTE:ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³æ™‚ã«å¤§é‡ã®functionãŒç”Ÿæˆã•ã‚Œï¼Œãƒ¡ãƒ¢ãƒªã‚’åœ§è¿«ã™ã‚‹ãŸã‚
+		//eval‚Å¶¬‚µ‚½functionƒIƒuƒWƒFƒNƒg‚ğƒƒ‚ƒŠ‚É•Û‘¶‚·‚éD
+		//NOTE:ƒAƒjƒ[ƒVƒ‡ƒ“‚É‘å—Ê‚Ìfunction‚ª¶¬‚³‚êCƒƒ‚ƒŠ‚ğˆ³”—‚·‚é‚½‚ß
 		function getFunc(source, paramName){
 			var id  = source + ":" + paramName;
 			var func = funCache[id];
@@ -1017,7 +1017,7 @@ var SVGGraph = (function(){
 			}
 			return func;
 		}
-		//ã‚½ãƒ¼ã‚¹ã‚’å…ƒã«functionã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ±‚ã‚ã‚‹
+		//ƒ\[ƒX‚ğŒ³‚ÉfunctionƒIƒuƒWƒFƒNƒg‚ğ‹‚ß‚é
 		function translateFunc(func){
 			var f, g;
 			if(func instanceof Function){
@@ -1041,38 +1041,38 @@ var SVGGraph = (function(){
 			return {fx: f, fy: g};
 		}
 		
-		//é–¢æ•°ã‚’å…ƒã«ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒªã‚¹ãƒˆã«å¯¾å¿œã™ã‚‹åº§æ¨™ã®ãƒªã‚¹ãƒˆã‚’æ±‚ã‚ã‚‹
+		//ŠÖ”‚ğŒ³‚Éƒpƒ‰ƒ[ƒ^ƒŠƒXƒg‚É‘Î‰‚·‚éÀ•W‚ÌƒŠƒXƒg‚ğ‹‚ß‚é
 		function getPoints(funcs, params){
 			var point;
 			var points = [];
 			if(!params){return [];}
 			for(var i = 0, len = params.length; i<len; i++){
 				point = getPoint(funcs, params[i]);
-				//ä¸æ­£ãªåº§æ¨™ã®åˆ¤å®š
+				//•s³‚ÈÀ•W‚Ì”»’è
 				if(isValid(point[0]) && isValid(point[1])){
 					points.push(point);
 				}
 			}
 			return points;
-			//å€¤ãŒåº§æ¨™ã¨ã—ã¦æ­£ã—ã„ã‹ã©ã†ã‹ã‚’åˆ¤å®šã™ã‚‹
+			//’l‚ªÀ•W‚Æ‚µ‚Ä³‚µ‚¢‚©‚Ç‚¤‚©‚ğ”»’è‚·‚é
 			function isValid(value){
 				return !isNaN(value) && (window.Math.abs(value) != Infinity);
 			}
 		}
-		//åº§æ¨™å¤‰æ›ã‚’è¡Œã†
+		//À•W•ÏŠ·‚ğs‚¤
 		function getPoint(funcs, t){
 			return [funcs.fx(t), funcs.fy(t)];
 		}
 		
-		//é–¢æ•°ã‚’é ‚ç‚¹ã®ãƒªã‚¹ãƒˆã«å¤‰æ›ã™ã‚‹
+		//ŠÖ”‚ğ’¸“_‚ÌƒŠƒXƒg‚É•ÏŠ·‚·‚é
 		function functionToPoints(func, from, to, pCount){
 			from = fix(from, setting.minX);
 			to = fix(to, setting.maxX);
 			if(pCount == undefined || pCount<=0){pCount = 1000;}
 			var result = {};
-			//å¤‰æ›é–¢æ•°ã‚’æ±‚ã‚ã‚‹
+			//•ÏŠ·ŠÖ”‚ğ‹‚ß‚é
 			var funcs = translateFunc(func);
-			//é–¢æ•°ã‚’è¿‘ä¼¼ã™ã‚‹
+			//ŠÖ”‚ğ‹ß—‚·‚é
 			var params = [];
 			for(var i = 0; i<=pCount; i++){
 				params.push(from + (to-from)/pCount*i);
@@ -1080,8 +1080,8 @@ var SVGGraph = (function(){
 			return getPoints(funcs, params);
 		}
 		
-		//2å…ƒé–¢æ•°ã®å‡ºåŠ›ã‚’è¡Œã†
-		//å¹³é¢ã‚’å¤‰å½¢ã—ãŸã‚ˆã†ãªçµæœãŒå¾—ã‚‰ã‚Œã‚‹ï¼
+		//2Œ³ŠÖ”‚Ìo—Í‚ğs‚¤
+		//•½–Ê‚ğ•ÏŒ`‚µ‚½‚æ‚¤‚ÈŒ‹‰Ê‚ª“¾‚ç‚ê‚éD
 		function surface(fxSource, fySource, sFrom, sTo, tFrom, tTo, freq, pCount){
 			sFrom = fix(sFrom, setting.minX);
 			sTo = fix(sTo, setting.maxX);
@@ -1097,7 +1097,7 @@ var SVGGraph = (function(){
 			var i;
 			var points;
 			var p;
-			//sã‚’å›ºå®šã—ã¦tã‚’å‹•ã‹ã™
+			//s‚ğŒÅ’è‚µ‚Ät‚ğ“®‚©‚·
 			var gs = getElem("g", {"class": "sfixed"});
 			for(i = 0; i<=freq; i++){
 				fx = getSFixed(pfx, sFrom + (sTo-sFrom)/freq*i);
@@ -1106,7 +1106,7 @@ var SVGGraph = (function(){
 				gs.appendChild(path(points, false));
 			}
 			g.appendChild(integrateStyle(gs));
-			//tã‚’å›ºå®šã—ã¦sã‚’å‹•ã‹ã™
+			//t‚ğŒÅ’è‚µ‚Äs‚ğ“®‚©‚·
 			var gt = getElem("g", {"class": "tfixed"});
 			for(i = 0; i<=freq; i++){
 				fx = getTFixed(pfx, tFrom + (tTo-tFrom)/freq*i);
@@ -1116,7 +1116,7 @@ var SVGGraph = (function(){
 			}
 			g.appendChild(integrateStyle(gt));
 			return append(g);
-			//2å¤‰æ•°ã®é–¢æ•°ã§ç‰‡æ–¹ã®å¤‰æ•°ã‚’å›ºå®šã—ãŸé–¢æ•°ã‚’å–å¾—ã™ã‚‹
+			//2•Ï”‚ÌŠÖ”‚Å•Ğ•û‚Ì•Ï”‚ğŒÅ’è‚µ‚½ŠÖ”‚ğæ“¾‚·‚é
 			function getSFixed(f, sValue){
 				return function(t){
 					return f(sValue, t);
@@ -1129,8 +1129,8 @@ var SVGGraph = (function(){
 			}
 		}
 		
-		//åŸºæœ¬å›³å½¢ã®æç”»
-		//ç›´ç·š(ç·šåˆ†)ã‚’å¼•ã
+		//Šî–{}Œ`‚Ì•`‰æ
+		//’¼ü(ü•ª)‚ğˆø‚­
 		function line(x1, y1, x2, y2, markerStart, markerEnd){
 			x1 = fix(x1, 0);
 			y1 = fix(y1, 0);
@@ -1144,24 +1144,24 @@ var SVGGraph = (function(){
 			return treatMarker(append(l), markerStart, markerEnd);
 		}
 		
-		//ç„¡é™ç›´ç·šã‚’å¼•ã
+		//–³ŒÀ’¼ü‚ğˆø‚­
 		function iline(x1, y1, x2, y2){
 			return _line(true, x1, y1, x2, y2);
 		}
 		
-		//åŠç›´ç·šã‚’å¼•ã
+		//”¼’¼ü‚ğˆø‚­
 		function hline(x1, y1, x2, y2, markerStart){
 			return _line(false, x1, y1, x2, y2, markerStart);
 		}
 		
-		//ç›´ç·šã‚’å¼•ã(å…±é€šé–¢æ•°)
+		//’¼ü‚ğˆø‚­(‹¤’ÊŠÖ”)
 		function _line(isFull, x1, y1, x2, y2, markerStart){
 			x1 = fix(x1, 0);
 			y1 = fix(y1, 0);
 			x2 = fix(x2, 0);
 			y2 = fix(y2, 0);
 			if(x1==x2 && y1==y2){return line(x1, y1, x2, y2);}
-			//å‚ç›´ã®ã‚±ãƒ¼ã‚¹
+			//‚’¼‚ÌƒP[ƒX
 			if(x1==x2){
 				var sy, ey;
 				if(y1<y2){
@@ -1177,9 +1177,9 @@ var SVGGraph = (function(){
 					return line(x1, y1, x1, ey, markerStart);
 				}
 			}
-			//å‚¾ã
+			//ŒX‚«
 			var slope = (y2-y1)/(x2-x1);
-			//åˆ‡ç‰‡
+			//Ø•Ğ
 			var slice = (y1+y2-(x1+x2)*slope)/2;
 			var sx, ex;
 			if(x1<x2){
@@ -1196,22 +1196,22 @@ var SVGGraph = (function(){
 			}
 		}
 		
-		//æ–œç·šã‚’å¼•ã(ç·šåˆ†)
+		//Îü‚ğˆø‚­(ü•ª)
 		function slope(x, y, rad, length, markerStart, markerEnd){
 			return _slope(line, x, y, rad, length, markerStart, markerEnd);
 		}
 		
-		//æ–œç·šã‚’å¼•ã(ç„¡é™ç›´ç·š)
+		//Îü‚ğˆø‚­(–³ŒÀ’¼ü)
 		function islope(x, y, rad){
 			return _slope(iline, x, y, rad, 1);
 		}
 		
-		//æ–œç·šã‚’å¼•ã(åŠç›´ç·š)
+		//Îü‚ğˆø‚­(”¼’¼ü)
 		function hslope(x, y, rad, markerStart){
 			return _slope(hline, x, y, rad, 1, markerStart);
 		}
 		
-		//æ–œç·šã‚’å¼•ã(å…±é€šé–¢æ•°)
+		//Îü‚ğˆø‚­(‹¤’ÊŠÖ”)
 		function _slope(func, x, y, rad, length, markerStart, markerEnd){
 			x = fix(x, 0);
 			y = fix(y, 0);
@@ -1220,12 +1220,12 @@ var SVGGraph = (function(){
 			return func(x, y, x + length*Math.cos(rad), y + length*Math.sin(rad), markerStart, markerEnd);
 		}
 		
-		//ãƒ‘ã‚¹ãƒ»æŠ˜ã‚Œç·šã‚’æç”»ã™ã‚‹
+		//ƒpƒXEÜ‚êü‚ğ•`‰æ‚·‚é
 		function path(points, isClosed, markerStart, markerEnd){
 			if(typeof points == "string"){
 				points = str(points);
 			}
-			//é ‚ç‚¹ãŒå°‘ãªã‘ã‚Œã°ãƒ©ã‚¤ãƒ³ã‚’å¼•ã‘ãªã„
+			//’¸“_‚ª­‚È‚¯‚ê‚Îƒ‰ƒCƒ“‚ğˆø‚¯‚È‚¢
 			if(points.length<2){
 				return;
 			}
@@ -1240,8 +1240,8 @@ var SVGGraph = (function(){
 			return treatMarker(append(p), markerStart, markerEnd);
 		}
 		
-		//ã‚¿ãƒ¼ãƒˆãƒ«ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ã‚’æç”»ã™ã‚‹
-		//NOTE:å§‹ç‚¹ã‚’æŒ‡å®šã—ãŸã‚ã¨ï¼Œå‘ãã®å¢—æ¸›ã¨è·é›¢ã®ãƒªã‚¹ãƒˆã‚’æ¸¡ã™ã“ã¨ã§ãƒ‘ã‚¹ã‚’è¡¨ç¾ã™ã‚‹
+		//ƒ^[ƒgƒ‹ƒOƒ‰ƒtƒBƒbƒN‚ğ•`‰æ‚·‚é
+		//NOTE:n“_‚ğw’è‚µ‚½‚ ‚ÆCŒü‚«‚Ì‘Œ¸‚Æ‹——£‚ÌƒŠƒXƒg‚ğ“n‚·‚±‚Æ‚ÅƒpƒX‚ğ•\Œ»‚·‚é
 		function turtle(x, y, commands, isClosed, markerStart, markerEnd){
 			x = fix(x, 0);
 			y = fix(y, 0);
@@ -1265,7 +1265,7 @@ var SVGGraph = (function(){
 			return path(points, isClosed, markerStart, markerEnd);
 		}
 
-		//å††ã‚’æç”»ã™ã‚‹
+		//‰~‚ğ•`‰æ‚·‚é
 		function circle(cx, cy, r){
 			cx = fix(cx, 0);
 			cy = fix(cy, 0);
@@ -1277,7 +1277,7 @@ var SVGGraph = (function(){
 			return append(c);
 		}
 
-		//æ¥•å††ã‚’æç”»ã™ã‚‹
+		//‘È‰~‚ğ•`‰æ‚·‚é
 		function ellipse(cx, cy, rx, ry){
 			cx = fix(cx, 0);
 			cy = fix(cy, 0);
@@ -1291,7 +1291,7 @@ var SVGGraph = (function(){
 			return append(e);
 		}
 
-		//å††å¼§æ‰‡å‹å…±é€šé–¢æ•°
+		//‰~ŒÊîŒ^‹¤’ÊŠÖ”
 		function getArcFunc(cx, cy, rx, ry){
 			cx = fix(cx, 0);
 			cy = fix(cy, 0);
@@ -1299,7 +1299,7 @@ var SVGGraph = (function(){
 			ry = fix(ry, 1);
 			return ["cos(t)*" + rx + "+" + cx, "sin(t)*" + ry + "+" + cy];
 		}
-		//å††å¼§ã‚’æç”»ã™ã‚‹
+		//‰~ŒÊ‚ğ•`‰æ‚·‚é
 		function arc(cx, cy, rx, ry, from, to, markerStart, markerEnd){
 			from = fix(from, 0);
 			to = fix(to, window.Math.PI * 2);
@@ -1307,7 +1307,7 @@ var SVGGraph = (function(){
 			var pCount = Math.floor(Math.abs(from - to)/Math.PI*180);
 			return treatMarker(plot(func, from, to, pCount), markerStart, markerEnd);
 		}
-		//æ‰‡å‹ã‚’æç”»ã™ã‚‹
+		//îŒ^‚ğ•`‰æ‚·‚é
 		function pie(cx, cy, rx, ry, from, to){
 			from = fix(from, 0);
 			to = fix(to, window.Math.PI * 2);
@@ -1318,7 +1318,7 @@ var SVGGraph = (function(){
 			return path(points, true);
 		}
 		
-		//çŸ©å½¢ã‚’æç”»ã™ã‚‹
+		//‹éŒ`‚ğ•`‰æ‚·‚é
 		function rect(x, y, width, height, rx, ry){
 			x = fix(x, 0);
 			y = fix(y, 0);
@@ -1327,7 +1327,7 @@ var SVGGraph = (function(){
 			rx = fix(rx, 0);
 			ry = fix(ry, 0);
 			var r = getStyledElem("rect");
-			//è² ã®å€¤ã‚’æŒ‡å®šå¯èƒ½ã¨ã™ã‚‹
+			//•‰‚Ì’l‚ğw’è‰Â”\‚Æ‚·‚é
 			if(width>=0){
 				r.x.baseVal.value = setting.posX(x);
 				r.width.baseVal.value = setting.scaleX(width);
@@ -1347,23 +1347,23 @@ var SVGGraph = (function(){
 			return append(r);
 		}
 		
-		//æ°´å¹³ç·šã‚’æç”»ã™ã‚‹
+		//…•½ü‚ğ•`‰æ‚·‚é
 		function horizon(y){
 			return line(setting.minX, y, setting.maxX, y);
 		}
-		//å‚ç›´ç·šã‚’æç”»ã™ã‚‹
+		//‚’¼ü‚ğ•`‰æ‚·‚é
 		function vertical(x){
 			return line(x, setting.minY, x, setting.maxY);
 		}
 		
-		//æ–‡å­—åˆ—ã‚’æç”»ã™ã‚‹
+		//•¶š—ñ‚ğ•`‰æ‚·‚é
 		function textSingleLine(x, y, str, pos, fontSize){
 			x = fix(x, 0);
 			y = fix(y, 0);
 			var tA;
 			var fSize = (fontSize === undefined) ? tStyle.fontSize: fontSize;
 			var dy;	
-			//ãƒ†ã‚­ã‚¹ãƒˆé…ç½®
+			//ƒeƒLƒXƒg”z’u
 			switch(toHPos(pos)){
 				case "left":
 					tA = "start";
@@ -1386,10 +1386,10 @@ var SVGGraph = (function(){
 					dy = 0;
 					break;
 			}
-			//NOTE:çµŒé¨“ä¸Š2pxç¨‹åº¦ä¸Šã«ãšã‚‰ã™ã¨ã—ã£ãã‚Šãã‚‹(baselineã®å•é¡Œ)
+			//NOTE:ŒoŒ±ã2px’ö“xã‚É‚¸‚ç‚·‚Æ‚µ‚Á‚­‚è‚­‚é(baseline‚Ì–â‘è)
 			var t = getElem("text", {x: setting.posX(x), y: setting.posY(y)+dy-2});
 			applyStyle(t, tStyle);
-			//textã«ã¤ã„ã¦ã¯pxã‚’ã¤ã‘ãªã„ã¨æ­£ã—ãå‹•ä½œã—ãªã„ï¼
+			//text‚É‚Â‚¢‚Ä‚Ípx‚ğ‚Â‚¯‚È‚¢‚Æ³‚µ‚­“®ì‚µ‚È‚¢D
 			t.style.fontSize = fSize + "px";
 			var style = t.style;
 			style.textAnchor = tA;
@@ -1397,8 +1397,8 @@ var SVGGraph = (function(){
 			return append(t);
 		}
 		
-		//è¤‡æ•°è¡Œãƒ†ã‚­ã‚¹ãƒˆã®æç”»
-		//\nã§æ”¹è¡Œã—ã¾ã™ï¼
+		//•¡”sƒeƒLƒXƒg‚Ì•`‰æ
+		//\n‚Å‰üs‚µ‚Ü‚·D
 		function text(x, y, str, pos){
 			str = fixStr(str, "");
 			var ln = str.split("\n");
@@ -1430,8 +1430,8 @@ var SVGGraph = (function(){
 			return append(g);
 		}
 
-		//ãƒãƒ¼ã‚«ãƒ¼å®šç¾©ã®ãŸã‚ã®é–¢æ•°ç¾¤
-		//ãƒãƒ¼ã‚«ãƒ¼ã‚’å–ã‚Šæ‰±ã†
+		//ƒ}[ƒJ[’è‹`‚Ì‚½‚ß‚ÌŠÖ”ŒQ
+		//ƒ}[ƒJ[‚ğæ‚èˆµ‚¤
 		function treatMarker(elem, markerStart, markerEnd){
 			if(markerStart!==undefined && markerStart != "none"){
 				appendMarker(elem, markerStart, false);				
@@ -1441,7 +1441,7 @@ var SVGGraph = (function(){
 			}
 			return elem;
 		}
-		//ãƒãƒ¼ã‚«ãƒ¼ã‚’æŒ¿å…¥ã™ã‚‹
+		//ƒ}[ƒJ[‚ğ‘}“ü‚·‚é
 		function appendMarker(elem, markerStyle, isEnd){
 			var params = {
 				id: "marker_auto_created_" + (markerCount++),
@@ -1460,7 +1460,7 @@ var SVGGraph = (function(){
 			elem.style[isEnd ? "markerEnd": "markerStart"] = "url(#" + marker.id + ")";
 			return elem;
 		}
-		//ãƒãƒ¼ã‚«ãƒ¼ç”¨ã®å›³å½¢ã‚’ç”Ÿæˆã™ã‚‹
+		//ƒ}[ƒJ[—p‚Ì}Œ`‚ğ¶¬‚·‚é
 		function getMarkerShape(markerStyle){
 			var shapeTemplate = Marker[markerStyle];
 			if(shapeTemplate === undefined){shapeTemplate = getElem("rect");}
@@ -1473,7 +1473,7 @@ var SVGGraph = (function(){
 				shape.style.fill = mStyle.fill;
 				shape.style.stroke = getMarkerColor();
 			}
-			//ãƒãƒ¼ã‚«ãƒ¼ã«ç‚¹ç·šã¯ç„¡ç”¨
+			//ƒ}[ƒJ[‚É“_ü‚Í–³—p
 			shape.style.strokeDasharray = "";
 			shape.className.value = "marker";
 			return shape;
@@ -1482,8 +1482,8 @@ var SVGGraph = (function(){
 			}
 		}
 
-		//åº§æ¨™æŒ‡ç¤ºã‚’è¡Œã†
-		//formatã«ã¯ãƒ©ãƒ™ãƒ«æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™{{x}},{{y}}ã®éƒ¨åˆ†ã¯åº§æ¨™ã«ç½®ãæ›ãˆã‚‰ã‚Œã¾ã™ï¼
+		//À•Ww¦‚ğs‚¤
+		//format‚É‚Íƒ‰ƒxƒ‹•¶š—ñ‚ğw’è‚µ‚Ü‚·{{x}},{{y}}‚Ì•”•ª‚ÍÀ•W‚É’u‚«Š·‚¦‚ç‚ê‚Ü‚·D
 		function dot(x, y, markerStyle, format){
 			var sx = x;
 			var sy = y;
@@ -1499,7 +1499,7 @@ var SVGGraph = (function(){
 				"transform", 
 				"translate(" + posX + "," + posY + "),scale(" + scale + "," + scale + "),translate(-5,-5)");
 			append(marker);
-			//ä»˜å±ãƒ†ã‚­ã‚¹ãƒˆ
+			//•t‘®ƒeƒLƒXƒg
 			var str = format
 				.replace(/\{\{x\}\}/g, x)
 				.replace(/\{\{y\}\}/g, y)
@@ -1515,7 +1515,7 @@ var SVGGraph = (function(){
 			return append(g);
 		}
 		
-		//åº§æ¨™æŒ‡ç¤ºã®ä¸€æ‹¬å‡ºåŠ›ã‚’è¡Œã†
+		//À•Ww¦‚ÌˆêŠ‡o—Í‚ğs‚¤
 		function dots(ds, markerStyle, format){
 			if(typeof ds == "string"){
 				ds = str(ds);
@@ -1529,9 +1529,9 @@ var SVGGraph = (function(){
 			append(g);
 		}
 		
-		//åŸç‚¹ã‹ã‚‰ã®è·é›¢ã‚°ãƒªãƒƒãƒ‰ã‚’è¡¨ç¤ºã™ã‚‹
+		//Œ´“_‚©‚ç‚Ì‹——£ƒOƒŠƒbƒh‚ğ•\¦‚·‚é
 		function distance(gridStyle, d, max, skip){
-			//æ—¢ã«å­˜åœ¨ã—ãŸã‚‰ä½•ã‚‚ã—ãªã„ï¼
+			//Šù‚É‘¶İ‚µ‚½‚ç‰½‚à‚µ‚È‚¢D
 			if(svg.querySelector("g.axisSet")){return;}
 			gridStyle = fixStr(gridStyle, "full");			
 			d = fix(d, 1);
@@ -1545,7 +1545,7 @@ var SVGGraph = (function(){
 			var gAxis = getElem("g", {"class": "axis"});
 			var gIndex = getElem("g", {"class": "index"});
 
-			//æ ¼å­ã¨ç›®ç››
+			//Šiq‚Æ–Ú·
 			for(var i=1; i*d<=max; i++){
 				elem = ellipse(0,0,i*d,i*d);
 				style = elem.style;
@@ -1569,7 +1569,7 @@ var SVGGraph = (function(){
 			gIndex.setAttribute("transform", "translate(0,2)");
 			integrateStyle(gIndex);
 
-			//è»¸
+			//²
 			g.appendChild(gAxis);
 			elem = line(0,0,setting.maxX,0);
 			style = elem.style;
@@ -1577,17 +1577,17 @@ var SVGGraph = (function(){
 			style.stroke = aStyle.axisStroke;
 			style.strokeWidth = aStyle.axisWidth;
 
-			//éšå±¤æ§‹é€ ã‚’ã¾ã¨ã‚ã‚‹
+			//ŠK‘w\‘¢‚ğ‚Ü‚Æ‚ß‚é
 			g.appendChild(gGrid);
 			g.appendChild(gAxis);
 			g.appendChild(gIndex);
 			return append(g);
 		}
 
-		//ã‚°ãƒ©ãƒ•æç”»ã®ãŸã‚ã®è£œåŠ©é–¢æ•°
-		//åº§æ¨™è»¸ã‚’æç”»ã™ã‚‹
+		//ƒOƒ‰ƒt•`‰æ‚Ì‚½‚ß‚Ì•â•ŠÖ”
+		//À•W²‚ğ•`‰æ‚·‚é
 		function axis(gridStyle, dx, dy, skipX, skipY){
-			//æ—¢ã«å­˜åœ¨ã—ãŸã‚‰ä½•ã‚‚ã—ãªã„ï¼
+			//Šù‚É‘¶İ‚µ‚½‚ç‰½‚à‚µ‚È‚¢D
 			if(svg.querySelector("g.axisSet")){return;}
 			
 			dx = fix(dx, 0);
@@ -1595,7 +1595,7 @@ var SVGGraph = (function(){
 			gridStyle = fixStr(gridStyle, "none");
 			skipX = fix(skipX, -1);
 			skipY = fix(skipY, -1);
-			//æ ¼å­ã®æç”»åŸºæº–åº§æ¨™
+			//Šiq‚Ì•`‰æŠî€À•W
 			var minX, maxX, minY, maxY, setGridStyle;
 			switch(gridStyle){
 				case "short":
@@ -1626,7 +1626,7 @@ var SVGGraph = (function(){
 				default:
 					setGridStyle = function(){};
 			}
-			//æ ¼å­ã®æç”»
+			//Šiq‚Ì•`‰æ
 			var gGrid = getElem("g", {"class": "grid"});
 			var l;
 			if(gridStyle != "none"){
@@ -1645,17 +1645,17 @@ var SVGGraph = (function(){
 			integrateStyle(gGrid);
 			setGridStyle(setStyle(gGrid));
 
-			//åº§æ¨™è»¸ã®æç”»
+			//À•W²‚Ì•`‰æ
 			var gAxis = getElem("g", {"class": "axis"});
 			gAxis.appendChild(line(setting.minX, 0, setting.maxX, 0));
 			gAxis.appendChild(line(0, setting.minY, 0, setting.maxY));
 			integrateStyle(gAxis);
 			setStyle(gAxis, true);
 
-			//ç›®ç››ã®è¿½åŠ 
+			//–Ú·‚Ì’Ç‰Á
 			var ind = index(dx, dy, skipX, skipY);
 			
-			//è¦ç´ ã‚’ã¾ã¨ã‚ã‚‹
+			//—v‘f‚ğ‚Ü‚Æ‚ß‚é
 			var g = getElem("g", {"class": "axisSet"});
 			g.appendChild(gGrid);
 			g.appendChild(gAxis);
@@ -1676,7 +1676,7 @@ var SVGGraph = (function(){
 			}
 		}
 		
-		//ç›®ç››ã‚’æç”»ã™ã‚‹
+		//–Ú·‚ğ•`‰æ‚·‚é
 		function index(dx, dy, skipX, skipY){
 			var i, x, y, len;
 			var fsize = aStyle.indexSize;
@@ -1718,21 +1718,21 @@ var SVGGraph = (function(){
 			return append(g);
 		}
 
-		//ã‚¿ã‚¤ãƒˆãƒ«ã‚’æŒ¿å…¥ã™ã‚‹
+		//ƒ^ƒCƒgƒ‹‚ğ‘}“ü‚·‚é
 		function title(str){
 			var t = getElem("title");
 			t.textContent = str;
 			return append(t);
 		}
 
-		//æ³¨é‡ˆã‚’æŒ¿å…¥ã™ã‚‹
+		//’ß‚ğ‘}“ü‚·‚é
 		function desc(str){
 			var d = getElem("desc");
 			d.textContent = str;
 			return append(d);
 		}
 		
-		//svgã®ãƒ‘ã‚¹æ–‡å­—åˆ—ã‚’ç›´æ¥æŒ¿å…¥ã™ã‚‹
+		//svg‚ÌƒpƒX•¶š—ñ‚ğ’¼Ú‘}“ü‚·‚é
 		var shape = (function(){
 			function translate(seg, map){
 				for(var i in map){
@@ -1757,7 +1757,7 @@ var SVGGraph = (function(){
 			return function(d){
 				var p = getStyledElem("path");
 				p.setAttribute("d", d);
-				//åº§æ¨™ã‚’ä¿®æ­£
+				//À•W‚ğC³
 				var segs = p.pathSegList;
 				for(var i=0, len=segs.numberOfItems; i<len; i++){
 					var seg = segs.getItem(i);
@@ -1767,31 +1767,31 @@ var SVGGraph = (function(){
 			}
 		})();
 		
-		//ãƒãƒ¼ãƒ‰ã‚’æŒ¿å…¥ã™ã‚‹
+		//ƒm[ƒh‚ğ‘}“ü‚·‚é
 		function append(node){
 			svg.appendChild(node);
 			return node;
 		}
-		//ãƒãƒ¼ãƒ‰ã‚’åº§æ¨™è»¸ã®èƒŒé¢ã«æŒ¿å…¥ã™ã‚‹
+		//ƒm[ƒh‚ğÀ•W²‚Ì”w–Ê‚É‘}“ü‚·‚é
 		function bg(node){
 			var axis = svg.querySelector("g.axisSet");
 			svg.insertBefore(node, axis);
 			return node;
 		}
-		//å†…å®¹ã‚’ã‚¯ãƒªã‚¢ã™ã‚‹
+		//“à—e‚ğƒNƒŠƒA‚·‚é
 		function clear(){
 			clearSvg(svg);
 		}
 
-		//ã‚¹ã‚¿ã‚¤ãƒ«è¨­å®šã‚’è¡Œã£ãŸè¦ç´ ã‚’å–å¾—ã™ã‚‹
+		//ƒXƒ^ƒCƒ‹İ’è‚ğs‚Á‚½—v‘f‚ğæ“¾‚·‚é
 		function getStyledElem(name){
 			var elem = getElem(name);
 			return applyStyle(elem, style);
 		}
 		
-		//æ–‡å­—åˆ—ã‚’æ•°å€¤ã‚‚ã—ãã¯ãã®é…åˆ—ã«å¤‰æ›ã™ã‚‹
+		//•¶š—ñ‚ğ”’l‚à‚µ‚­‚Í‚»‚Ì”z—ñ‚É•ÏŠ·‚·‚é
 		function val(expression, arrayOnly){
-			//å…ƒã®å¼ã‚’é…åˆ—ã®ã‚½ãƒ¼ã‚¹å½¢å¼ã«å¤‰æ›
+			//Œ³‚Ì®‚ğ”z—ñ‚Ìƒ\[ƒXŒ`®‚É•ÏŠ·
 			var source = expression
 				.replace(/,/g, '","')
 				.replace(/\[/g, '["')
@@ -1805,11 +1805,11 @@ var SVGGraph = (function(){
 			}
 			return valArray(values);
 		}
-		//æ–‡å­—åˆ—ã‚’æ–‡å­—åˆ—ã‚‚ã—ãã¯ãã®é…åˆ—ã«å¤‰æ›ã™ã‚‹
+		//•¶š—ñ‚ğ•¶š—ñ‚à‚µ‚­‚Í‚»‚Ì”z—ñ‚É•ÏŠ·‚·‚é
 		function str(expression){
 			return val(expression, true);
 		}
-		//é…åˆ—ã®å†…å®¹ã‚’å†å¸°çš„ã«è©•ä¾¡ã™ã‚‹
+		//”z—ñ‚Ì“à—e‚ğÄ‹A“I‚É•]‰¿‚·‚é
 		function valArray(values){
 			if(values instanceof Array){
 				for(var i=0, len=values.length; i<len; i++){
@@ -1822,30 +1822,30 @@ var SVGGraph = (function(){
 			}
 		}
 
-		//å¼ã‚’æ•°å€¤ã«å¤‰æ›ã™ã‚‹
+		//®‚ğ”’l‚É•ÏŠ·‚·‚é
 		function toValue(expression){
 			return SVGGraphNonStrict.toValue(expression, Math, mathjs, svg);
 		}
 
-		//æœªå®šç¾©å€¤ã«å¯¾ã™ã‚‹è¦å®šå€¤ã‚’è¿”ã™
+		//–¢’è‹`’l‚É‘Î‚·‚é‹K’è’l‚ğ•Ô‚·
 		function fix(val, defaultVal){
 			var result = toValue(val);
 			return result === undefined || result == null ? defaultVal : result;
 		}
-		//æœªå®šç¾©å€¤ã«å¯¾ã™ã‚‹è¦å®šå€¤ã‚’è¿”ã™ï¼ˆæ–‡å­—åˆ—ã®ã‚±ãƒ¼ã‚¹ï¼‰
+		//–¢’è‹`’l‚É‘Î‚·‚é‹K’è’l‚ğ•Ô‚·i•¶š—ñ‚ÌƒP[ƒXj
 		function fixStr(val, defaultVal){
 			return (val === undefined 
 				|| val == null 
 				|| (val instanceof String && val == "")) ? defaultVal : val+"";
 		}
 
-		//apiã‚’å…¬é–‹ã™ã‚‹
+		//api‚ğŒöŠJ‚·‚é
 		extendAPI()
-		//ãƒ¡ã‚¤ãƒ³å‡¦ç†ã®å®Ÿè¡Œ
+		//ƒƒCƒ“ˆ—‚ÌÀs
 		main();
 	}
 
-	//è¦ç´ ã«ã‚¹ã‚¿ã‚¤ãƒ«ã‚’é©ç”¨ã™ã‚‹
+	//—v‘f‚ÉƒXƒ^ƒCƒ‹‚ğ“K—p‚·‚é
 	function applyStyle(elem, style){
 		var s = elem.style;
 		for(var i in style){
@@ -1857,7 +1857,7 @@ var SVGGraph = (function(){
 		return elem;
 	}
 
-	//è¦ç´ ã®ã‚¹ã‚¿ã‚¤ãƒ«ã‚’é›†ç´„ã™ã‚‹
+	//—v‘f‚ÌƒXƒ^ƒCƒ‹‚ğW–ñ‚·‚é
 	function integrateStyle(g){
 		for(var i = 0, len = g.childNodes.length; i<len; i++){
 			var c = g.childNodes[i];
@@ -1877,20 +1877,20 @@ var SVGGraph = (function(){
 		return g;
 	}
 
-	//ã‚°ãƒ©ãƒ•ã®å†…å®¹ã‚’ã‚¯ãƒªã‚¢ã™ã‚‹
-	//ã‚¹ã‚¯ãƒªãƒ—ãƒˆã«ã‚ˆã‚Šè‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸã‚‚ã®ã®ã¿ã‚’å‰Šé™¤ã™ã‚‹
+	//ƒOƒ‰ƒt‚Ì“à—e‚ğƒNƒŠƒA‚·‚é
+	//ƒXƒNƒŠƒvƒg‚É‚æ‚è©“®¶¬‚³‚ê‚½‚à‚Ì‚Ì‚İ‚ğíœ‚·‚é
 	function clearSvg(svg){
 		svg.removeAttribute("title");
 		var nodes = svg.querySelectorAll("svg *[auto-created=true]");
 		for(var i = 0, len = nodes.length; i<len; i++){
 			var node = nodes[i];
 			node.parentNode.removeChild(nodes[i]);
-			//ãã®ã¾ã¾ç ´æ£„ã›ãšå†åˆ©ç”¨ã™ã‚‹
+			//‚»‚Ì‚Ü‚Ü”jŠü‚¹‚¸Ä—˜—p‚·‚é
 			cacheElem(node.tagName, node);
 		}
 	}
 	
-	//ã‚°ãƒ©ãƒ•è¨­å®šã®å–å¾—
+	//ƒOƒ‰ƒtİ’è‚Ìæ“¾
 	function graphSetting(svg){}
 	(function(proto){
 		proto.init = function(svg){
@@ -1899,15 +1899,15 @@ var SVGGraph = (function(){
 			}else{
 				caseNested(svg, this);
 			}
-			//ç”Ÿã®ã‚³ãƒ¼ãƒ‰ã‚’å®Ÿè¡Œå¯èƒ½ãªã‚³ãƒ¼ãƒ‰ã¨ã™ã‚‹ï¼
+			//¶‚ÌƒR[ƒh‚ğÀs‰Â”\‚ÈƒR[ƒh‚Æ‚·‚éD
 			this.script = svg.script().replace(/\{\{(\d)\}\}/g, "(svg.param($1))");
 		};
-		//svgè¦ç´ ã®å ´åˆ
+		//svg—v‘f‚Ìê‡
 		function caseViewport(svg, me){
 			var size = getViewportSize(svg);
 			setSize(svg, size, me);
 		}
-		//å…¥ã‚Œå­ã®svgè¦ç´ ã®å ´åˆ
+		//“ü‚êq‚Ìsvg—v‘f‚Ìê‡
 		function caseNested(svg, me){
 			var width = getAttr(svg, "width", 0);
 			var height = getAttr(svg, "height", 0);
@@ -1918,7 +1918,7 @@ var SVGGraph = (function(){
 			};
 			setSize(svg, size, me);
 		}
-		//ãƒ“ãƒ¥ãƒ¼ãƒãƒ¼ãƒˆsvgè¦ç´ ã®å¤§ãã•ã‚’å–å¾—ã™ã‚‹
+		//ƒrƒ…[ƒ|[ƒgsvg—v‘f‚Ì‘å‚«‚³‚ğæ“¾‚·‚é
 		function getViewportSize(svg){
 			var vp = svg.viewportElement ? svg.viewportElement: svg;
 			var style = window.getComputedStyle(vp);
@@ -1930,7 +1930,7 @@ var SVGGraph = (function(){
 			}
 			return {width: width, height: height, viewBox: svg.getAttribute("viewBox")};
 		}
-		//åŸºæœ¬ã¨ãªã‚‹æç”»ã‚µã‚¤ã‚ºã‚’é©ç”¨ã™ã‚‹
+		//Šî–{‚Æ‚È‚é•`‰æƒTƒCƒY‚ğ“K—p‚·‚é
 		function setSize(svg, size, me){
 			me.width = size.width;
 			me.height = size.height;
@@ -1939,7 +1939,7 @@ var SVGGraph = (function(){
 				svg.setAttribute("viewBox", [0, 0, me.width, me.height].join(" "));
 			}
 		}
-		//ã‚°ãƒ©ãƒ•ã®ã‚¹ãƒ©ã‚¤ãƒ‰å€¤
+		//ƒOƒ‰ƒt‚ÌƒXƒ‰ƒCƒh’l
 		proto.slideX = 0;
 		proto.slideY = 0;
 
@@ -1953,33 +1953,33 @@ var SVGGraph = (function(){
 			check(this);
 		};
 
-		//ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿è¨­å®šã®ç¢ºèªã‚’è¡Œã†
+		//ƒpƒ‰ƒ[ƒ^İ’è‚ÌŠm”F‚ğs‚¤
 		function check(me){
 			if(me.minX >= me.maxX){throw "parameter error:maxX must be grater than minX."}
 			if(me.minY >= me.maxY){throw "parameter error:maxY must be grater than minY."}
 		}
 		
-		//å±æ€§ã‚’å–å¾—ã™ã‚‹ï¼
+		//‘®«‚ğæ“¾‚·‚éD
 		function getAttr(svg, name, defaultValue){
 			var value = svg.getAttribute(name);
 			return value != null ? value.split("px")[0] * 1 : defaultValue;
 		}
 
-		//ã‚°ãƒ©ãƒ•åº§æ¨™ã‚’svgåº§æ¨™ã«å¤‰æ›ã™ã‚‹
+		//ƒOƒ‰ƒtÀ•W‚ğsvgÀ•W‚É•ÏŠ·‚·‚é
 		proto.posX = function(x){
 			return round((x - this.minX) * this.unitX);
 		};
 		proto.posY = function(y){
 			return round(this.height - (y - this.minY) * this.unitY);
 		}
-		//svgåº§æ¨™ã‚’ã‚°ãƒ©ãƒ•åº§æ¨™ã«å¤‰æ›ã™ã‚‹
+		//svgÀ•W‚ğƒOƒ‰ƒtÀ•W‚É•ÏŠ·‚·‚é
 		proto.graphX = function(x){
 			return round(x / this.unitX + this.minX);
 		};
 		proto.graphY = function(y){
 			return round((this.height - y)/this.unitY + this.minY);
 		}
-		//ã‚°ãƒ©ãƒ•ã‚µã‚¤ã‚ºã‚’svgã‚µã‚¤ã‚ºã«å¤‰æ›ã™ã‚‹
+		//ƒOƒ‰ƒtƒTƒCƒY‚ğsvgƒTƒCƒY‚É•ÏŠ·‚·‚é
 		proto.scaleX = function(x){
 			return round(x * this.unitX);
 		};
@@ -1987,23 +1987,23 @@ var SVGGraph = (function(){
 			return round(y * this.unitY);
 		};
 		function round(value){
-			//ã‚°ãƒ©ãƒ•æç”»ã«ã¯å°æ•°ç‚¹ä»¥ä¸‹2æ¡ç¨‹åº¦ã§ååˆ†
+			//ƒOƒ‰ƒt•`‰æ‚É‚Í¬”“_ˆÈ‰º2Œ…’ö“x‚Å\•ª
 			return window.Math.round(value*100)/100;
 		}
 	})(graphSetting.prototype);
 
-	//ã‚¤ãƒ™ãƒ³ãƒˆå‡¦ç†ç™»éŒ²
+	//ƒCƒxƒ“ƒgˆ—“o˜^
 	(function(){
 		document.addEventListener("DOMContentLoaded", main, true);
 	})();
 	
-	//å¤‰æ›é–¢æ•°
+	//•ÏŠ·ŠÖ”
 	var mathjs = function(str){return str;}
 
-	//å¤‰æ›é–¢æ•°ã¯å¾Œã‹ã‚‰å¤‰æ›´ã§ãã‚‹ï¼
+	//•ÏŠ·ŠÖ”‚ÍŒã‚©‚ç•ÏX‚Å‚«‚éD
 	function registerConverter(f){mathjs = f;}
 
-	//å¤–éƒ¨ã«å…¬é–‹ã™ã‚‹ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹
+	//ŠO•”‚ÉŒöŠJ‚·‚éƒCƒ“ƒ^[ƒtƒF[ƒX
 	return (function(){
 		var obj = {};
 		obj.registerMath = registerMath;
@@ -2015,7 +2015,7 @@ var SVGGraph = (function(){
 		Object.defineProperty(obj, "mathjs", {
 			get: function(){return mathjs;}
 		});
-		//å†…éƒ¨ã§ä½¿ã£ã¦ã„ã‚‹æ•°å­¦é–¢æ•°
+		//“à•”‚Åg‚Á‚Ä‚¢‚é”ŠwŠÖ”
 		obj.Math = Math;
 		return obj;
 	})();
@@ -2024,65 +2024,65 @@ Object.freeze(SVGGraph);
 
 (function(){
 	function mathjs(str){
-		//ä½™åˆ†ãªã‚¹ãƒšãƒ¼ã‚¹ã‚’å‰Šé™¤
+		//—]•ª‚ÈƒXƒy[ƒX‚ğíœ
 		str = str.replace(/\s/g, "");
-		//ä¸‰è§’é–¢æ•°ã®é€†é–¢æ•°ã‚’å…ƒã«æˆ»ã™
+		//OŠpŠÖ”‚Ì‹tŠÖ”‚ğŒ³‚É–ß‚·
 		if(str.indexOf("^-1")>=0){
 			str = str.replace(/(sin|cos|tan|sec|csc|cot|sinh|cosh|tanh|sech|csch|coth)\^-1/g, "a$1");
 		}
-		//Ï€
-		str = str.replace(/Ï€/g, "(Ï€)");
-		//âˆš
-		str = str.replace(/âˆš/g, "rt");
-		//Â°
-		str = str.replace(/(-?(?:\d+|\d*\.\d+))Â°/g, "rad($1)");
-		//*ã‚’æŒ¿å…¥
+		//ƒÎ
+		str = str.replace(/ƒÎ/g, "(ƒÎ)");
+		//ã
+		str = str.replace(/ã/g, "rt");
+		//‹
+		str = str.replace(/(-?(?:\d+|\d*\.\d+))‹/g, "rad($1)");
+		//*‚ğ‘}“ü
 		str = str.replace(/(^|\W)(\d*\.\d+|\d+)([A-Za-z\(])/g, "$1$2*$3");
 		str = str.replace(/\)(\w|\()/g, ")*$1");
-		//^ã®å¤‰æ›
+		//^‚Ì•ÏŠ·
 		while(str.indexOf("^")>=0){
 			str = replacePow(str);
 		}
-		//!ã®å¤‰æ›
+		//!‚Ì•ÏŠ·
 		while(str.indexOf("!")>=0){
 			str = replaceFactorial(str);
 		}
 		return str;
 	}
-	//^æ¼”ç®—å­ã‚’pow(ã¹ãä¹—)ã«å¤‰æ›ã™ã‚‹
+	//^‰‰Zq‚ğpow(‚×‚«æ)‚É•ÏŠ·‚·‚é
 	function replacePow(str){
 		var p = str.lastIndexOf("^");
-		//^ã®å·¦éƒ¨ã¨å³éƒ¨ã«åˆ‡ã‚Šåˆ†ã‘ã‚‹
+		//^‚Ì¶•”‚Æ‰E•”‚ÉØ‚è•ª‚¯‚é
 		var right = str.slice(p+1);
 		var left = str.substring(0, p);
-		//ä¸¡è¾ºã®å®£è¨€éƒ¨ã‚’å–å¾—ã™ã‚‹
+		//—¼•Ó‚ÌéŒ¾•”‚ğæ“¾‚·‚é
 		var rightExp = getRightPart(right);
 		var leftExp = getLeftPart(left);
-		//æ–‡å­—åˆ—ã‚’åˆ‡ã‚Šè²¼ã‚Šã—ã¦ã‚¹ãƒ†ãƒ¼ãƒˆãƒ¡ãƒ³ãƒˆã‚’å†æ§‹æˆã™ã‚‹
+		//•¶š—ñ‚ğØ‚è“\‚è‚µ‚ÄƒXƒe[ƒgƒƒ“ƒg‚ğÄ\¬‚·‚é
 		var result =
 			left.substr(0, left.length-leftExp.length) + "pow(" + leftExp +"," + rightExp + ")" + right.slice(rightExp.length);
 		return result;
 	}
-	//!éšä¹—ã‚’factorialã«å¤‰æ›ã™ã‚‹
+	//!ŠKæ‚ğfactorial‚É•ÏŠ·‚·‚é
 	function replaceFactorial(str){
 		var p = str.indexOf("!");
 		var right = str.slice(p+1);
 		var left = str.substring(0, p);
-		//å·¦è¾ºã®å®£è¨€éƒ¨ã‚’å–å¾—ã™ã‚‹
+		//¶•Ó‚ÌéŒ¾•”‚ğæ“¾‚·‚é
 		var leftExp = getLeftPart(left);
-		//æ–‡å­—åˆ—ã‚’åˆ‡ã‚Šè²¼ã‚Šã—ã¦ã‚¹ãƒ†ãƒ¼ãƒˆãƒ¡ãƒ³ãƒˆã‚’å†æ§‹æˆã™ã‚‹
+		//•¶š—ñ‚ğØ‚è“\‚è‚µ‚ÄƒXƒe[ƒgƒƒ“ƒg‚ğÄ\¬‚·‚é
 		var result = 
 			left.substr(0, left.length-leftExp.length) + "factorial(" + leftExp + ")" + right;
 		return result;
 	}
-	//å³ã®å®£è¨€ã‚’å–å¾—ã™ã‚‹
+	//‰E‚ÌéŒ¾‚ğæ“¾‚·‚é
 	function getRightPart(str){
 		var match = str.match(/^(?:-?(?:\d*\.\d+|\d+)|-?[A-Za-z]\w*(?:\.[A-Za-z]\w*)?|[A-Za-z]\w*)/);
 		var part = match ? match[0]: "";
 		if(str.charAt(part.length) != "("){
 			return part;
 		}else{
-			//é–‰ã˜æ‹¬å¼§ã®ä½ç½®ã‚’åˆ¤å®š
+			//•Â‚¶Š‡ŒÊ‚ÌˆÊ’u‚ğ”»’è
 			var level = 0;
 			var c;
 			for(var i = part.length, len=str.length; i<len; i++){
@@ -2096,13 +2096,13 @@ Object.freeze(SVGGraph);
 			return str.substr(0, i+1);
 		}
 	}
-	//å·¦ã®å®£è¨€ã‚’å–å¾—ã™ã‚‹
+	//¶‚ÌéŒ¾‚ğæ“¾‚·‚é
 	function getLeftPart(str){
-		//å·¦è¾ºãŒæ•°å€¤ã‚‚ã—ãã¯å¤‰æ•°ãªã‚‰ç›´ãã«è¿”ã™
+		//¶•Ó‚ª”’l‚à‚µ‚­‚Í•Ï”‚È‚ç’¼‚®‚É•Ô‚·
 		var numMatch = str.match(/([A-Za-z]\w*|[A-Za-z]\w*\.[A-Za-z]\w*|-?(?:\d*\.\d+|\d+))$/);
 		if(numMatch){return numMatch[0];}
-		//æ‹¬å¼§ã®ç¯„å›²ã‚’å–å¾—
-		var i=str.length-1;//æœ€å¾Œã®ä½ç½®
+		//Š‡ŒÊ‚Ì”ÍˆÍ‚ğæ“¾
+		var i=str.length-1;//ÅŒã‚ÌˆÊ’u
 		if(str.charAt(i)==")"){
 			var level = 0;
 			var c;
@@ -2116,73 +2116,73 @@ Object.freeze(SVGGraph);
 			}
 			i--;
 		}
-		//æ®‹ã‚Šã®éƒ¨åˆ†ã‹ã‚‰é–¢æ•°åãªã©ã‚’å–å¾—
+		//c‚è‚Ì•”•ª‚©‚çŠÖ”–¼‚È‚Ç‚ğæ“¾
 		var remain = str.substring(0, i+1);
 		var match = remain.match(/-?([A-Za-z]\w*(?:\.[A-Za-z]\w*)?|[A-Za-z]\w)*$/);
 		var a = match ? match[0]: "";
 		return a + str.slice(i+1);
 	}
-	//ã‚³ãƒ³ãƒãƒ¼ã‚¿ãƒ¼ã‚’ç™»éŒ²ã™ã‚‹
+	//ƒRƒ“ƒo[ƒ^[‚ğ“o˜^‚·‚é
 	SVGGraph.registerConverter(mathjs);
 })();
 
-//æ•°å­¦é–¢æ•°ã‚’æ‹¡å¼µã™ã‚‹
+//”ŠwŠÖ”‚ğŠg’£‚·‚é
 (function(){
-	//ç™»éŒ²ã®é †ç•ªã¯ãã‚Œã»ã©é‡è¦ã§ã¯ã‚ã‚Šã¾ã›ã‚“ï¼(å¾ªç’°ã—ãªã„ã‚ˆã†ã«)
-	//NOTE:å¤§æœ¬ã®Mathã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã¯window.Mathã¨ã—ã¦å‚ç…§ã§ãã¾ã™ï¼
+	//“o˜^‚Ì‡”Ô‚Í‚»‚ê‚Ù‚Çd—v‚Å‚Í‚ ‚è‚Ü‚¹‚ñD(zŠÂ‚µ‚È‚¢‚æ‚¤‚É)
+	//NOTE:‘å–{‚ÌMathƒIƒuƒWƒFƒNƒg‚Íwindow.Math‚Æ‚µ‚ÄQÆ‚Å‚«‚Ü‚·D
 	var r = SVGGraph.registerMath;
 	
-	//å®šæ•°
-	//å††å‘¨ç‡
+	//’è”
+	//‰~ü—¦
 	r("pi", Math.PI);
 	r("Pi", Math.PI);
 	r("pI", Math.PI);
-	r("Ï€", Math.PI);
-	//å®šæ•°ã¯å°æ–‡å­—ã§ã‚‚è‰¯ã—ã¨ã™ã‚‹
-	//è‡ªç„¶å¯¾æ•°ã®åº•
+	r("ƒÎ", Math.PI);
+	//’è”‚Í¬•¶š‚Å‚à—Ç‚µ‚Æ‚·‚é
+	//©‘R‘Î”‚Ì’ê
 	r("e", Math.E);
-	//2ã®è‡ªç„¶å¯¾æ•°
+	//2‚Ì©‘R‘Î”
 	r("ln2", Math.LN2);
-	//10ã®è‡ªç„¶å¯¾æ•°
+	//10‚Ì©‘R‘Î”
 	r("ln10", Math.LN10);
-	//2ã‚’åº•ã¨ã—ãŸeã®å¯¾æ•°
+	//2‚ğ’ê‚Æ‚µ‚½e‚Ì‘Î”
 	r("log2e", Math.LOG2E);
-	//10ã‚’åº•ã¨ã—ãŸeã®å¯¾æ•°
+	//10‚ğ’ê‚Æ‚µ‚½e‚Ì‘Î”
 	r("log10e", Math.LOG10E);
-	//2ã®å¹³æ–¹æ ¹
+	//2‚Ì•½•ûª
 	r("sqrt2", Math.SQRT2);
-	//1/2ã®å¹³æ–¹æ ¹
+	//1/2‚Ì•½•ûª
 	r("sqrt1_2", Math.SQRT1_2);
 
-	//è«–ç†å¦å®š
+	//˜_—”Û’è
 	r("not", function(x){return !x;});
-	//æ ¹
+	//ª
 	r("rt", function(x,a){a=a===undefined?2:a;return Math.pow(x, 1/a)});
 	r("cbrt", function(x){return Math.sign(x)*Math.rt(Math.abs(x), 3)});
 
-	//è§’åº¦â†’ãƒ©ã‚¸ã‚¢ãƒ³
+	//Šp“x¨ƒ‰ƒWƒAƒ“
 	r("rad", function(deg){return deg/180*Math.PI;});
-	//ãƒ©ã‚¸ã‚¢ãƒ³â†’è§’åº¦
+	//ƒ‰ƒWƒAƒ“¨Šp“x
 	r("deg", function(rad){return rad/Math.PI*180;});
 	
-	//å¯¾æ•°é–¢æ•°(aâ€¦åº•)
+	//‘Î”ŠÖ”(ac’ê)
 	r("log", function(x, a){
 		if(a === undefined){a = Math.E;}
 		return window.Math.log(x)/window.Math.log(a);
 	});
 	r("ln", function(x){return window.Math.log(x);})
 
-	//ä¸‰è§’é–¢æ•°
+	//OŠpŠÖ”
 	r("sec", function(x){return 1/Math.cos(x);});
 	r("csc", function(x){return 1/Math.sin(x);});
 	r("cot", function(x){return 1/Math.tan(x);});
 	
-	//é€†ä¸‰è§’é–¢æ•°(aè¨˜æ³•)
+	//‹tOŠpŠÖ”(a‹L–@)
 	r("asec", function(x){return Math.acos(1/x);});
 	r("acsc", function(x){return Math.asin(1/x);});
 	r("acot", function(x){return Math.atan(1/x);});
 
-	//é€†ä¸‰è§’é–¢æ•°(arcè¨˜æ³•)
+	//‹tOŠpŠÖ”(arc‹L–@)
 	r("arcsin", function(x){return Math.asin(x);});
 	r("arccos", function(x){return Math.acos(x);});
 	r("arctan", function(x){return Math.atan(x);});
@@ -2190,7 +2190,7 @@ Object.freeze(SVGGraph);
 	r("arccsc", function(x){return Math.acsc(x);});
 	r("arccot", function(x){return Math.acot(x);});
 	
-	//åŒæ›²ç·šé–¢æ•°
+	//‘o‹ÈüŠÖ”
 	r("sinh", function(x){return (Math.exp(x)-Math.exp(-x))/2;});
 	r("cosh", function(x){return (Math.exp(x)+Math.exp(-x))/2;});
 	r("tanh", function(x){return (Math.exp(x)-Math.exp(-x))/(Math.exp(x)+Math.exp(-x));});
@@ -2198,7 +2198,7 @@ Object.freeze(SVGGraph);
 	r("csch", function(x){return 1/Math.sinh(x);});
 	r("coth", function(x){return 1/Math.tanh(x);});
 	
-	//é€†åŒæ›²ç·šé–¢æ•°(aè¨˜æ³•)
+	//‹t‘o‹ÈüŠÖ”(a‹L–@)
 	r("asinh", function(x){return Math.log(x+Math.sqrt(x*x+1));});
 	r("acosh", function(x){return Math.log(x+Math.sqrt(x*x-1));});
 	r("atanh", function(x){return Math.log((1+x)/(1-x))/2;});
@@ -2206,7 +2206,7 @@ Object.freeze(SVGGraph);
 	r("acsch", function(x){return Math.asinh(1/x);});
 	r("acoth", function(x){return Math.atanh(1/x);});
 	
-	//é€†åŒæ›²ç·šé–¢æ•°(arcè¨˜æ³•)
+	//‹t‘o‹ÈüŠÖ”(arc‹L–@)
 	r("arcsinh", function(x){return Math.asinh(x);});
 	r("arccosh", function(x){return Math.acosh(x);});
 	r("arctanh", function(x){return Math.atanh(x);});
@@ -2214,10 +2214,10 @@ Object.freeze(SVGGraph);
 	r("arccsch", function(x){return Math.acsch(x);});
 	r("arccoth", function(x){return Math.acoth(x);});
 	
-	//ç¬¦å·é–¢æ•°
+	//•„†ŠÖ”
 	r("sign", function(x){return x==0 ? 0 : (x<0 ? -1: 1);});
 
-	//éšä¹—
+	//ŠKæ
 	r("factorial", function(n){
 		if(n<0){return NaN;}
 		if(n==0){return 1;}
@@ -2227,20 +2227,20 @@ Object.freeze(SVGGraph);
 		}
 		return result;
 	});
-	//é †åˆ—æ•°
+	//‡—ñ”
 	r("P", function(n, r){return Math.factorial(n)/Math.factorial(n-r);});
-	//çµ„ã¿åˆã‚ã›æ•°
+	//‘g‚İ‡‚í‚¹”
 	r("C", function(n, r){return Math.P(n,r)/Math.factorial(r)});
 
-	//åˆ‡ã‚Šä¸Šã’
+	//Ø‚èã‚°
 	r("floor", function(x, n){
 		if(n===undefined){n=0;}
 		var m = Math.pow(10, n);return window.Math.floor(x * m)/m;});
-	//ä¸¸ã‚
+	//ŠÛ‚ß
 	r("round", function(x, n){
 		if(n===undefined){n=0;}
 		var m = Math.pow(10, n);return window.Math.round(x * m)/m;});
-	//åˆ‡ã‚Šæ¨ã¦
+	//Ø‚èÌ‚Ä
 	r("ceil", function(x, n){
 		if(n===undefined){n=0;}
 		var m = Math.pow(10, n);return window.Math.ceil(x * m)/m;});
