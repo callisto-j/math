@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <title>関数グラフ描画スクリプト・SVGGraph.js</title>
 
         <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -12,34 +12,44 @@
         <svg width="200" height="200" type="text" class="graph0"
         script="setRange(-5,5,-5,5);
         axis('full',1,1);
-        plot('{{0}}sin({{1}}*x)');
-        style.stroke='red';"
-        param0="1" param1="1"
-        mode="swp"
+        style.stroke='red';
+        plot('{{0}}sin({{1}}x)+{{2}}');"
+        param0="1" param1="1" param2="1"
+        mode="pw"
         />
-        p0: <input type="range" name="range" max="10" min="-10" step="0.5" class="range0" />
+        p0: <input type="range" name="range" max="10" min="-10" step="0.5" class="range0"/>
         p1: <input type="range" name="range" max="10" min="-10" step="0.5" class="range1"/>
+        p2: <input type="range" name="range" max="10" min="-10" step="0.5" class="range2"/>
         <script>
         $(function(){
             // 初期化
             $(".range0").val($(".gui").find("span").eq(0).find("input").val());
             $(".range1").val($(".gui").find("span").eq(1).find("input").val());
-
+            $(".range2").val($(".gui").find("span").eq(1).find("input").val());
             // 同期処理
             $(".range0").on('input', function () {
                 $(".gui").find("span").eq(0).find("input").val($(this).val());
+                $(".gui").find("input[value='更新']").click();
             });
-
             $(".range1").on('input', function () {
                 $(".gui").find("span").eq(1).find("input").val($(this).val());
+                $(".gui").find("input[value='更新']").click();
             });
-
+            $(".range2").on('input', function () {
+                $(".gui").find("span").eq(2).find("input").val($(this).val());
+                $(".gui").find("input[value='更新']").click();
+            });
             $(".range0").change( function () {
                 $(".gui").find("span").eq(0).find("input").val($(this).val());
+                $(".gui").find("input[value='更新']").click();
             });
-
             $(".range1").change( function () {
                 $(".gui").find("span").eq(1).find("input").val($(this).val());
+                $(".gui").find("input[value='更新']").click();
+            });
+            $(".range2").change( function () {
+                $(".gui").find("span").eq(2).find("input").val($(this).val());
+                $(".gui").find("input[value='更新']").click();
             });
         });
         </script>
